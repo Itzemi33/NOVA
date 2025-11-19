@@ -26,7 +26,7 @@ public class nova {
 
     }
 
-    private static void general() {
+    public static void general() {
         Scanner sc = new Scanner(System.in);
         int opc;
 
@@ -40,11 +40,14 @@ public class nova {
             opc = sc.nextInt();
             switch (opc) {
                 case 1:
-                    moduloejercicios();
+                    moduloejercicios.gral();
+                    break;
                 case 2:
-                    modulocalculadora();
+                    modulocalculadora.gral();
+                    break;
                 case 3:
-                    modulojuego();
+                    modulojuego.gral();
+                    break;
                 case 4:
                     System.out.println("Saliendo");
                     break;
@@ -56,16 +59,4 @@ public class nova {
 
     }
 
-    private static void modulojuego() {
-
-    }
-
-    private static void modulocalculadora() {
-    }
-
-    private static void moduloejercicios()
-    {
-
-
-    }
 }
