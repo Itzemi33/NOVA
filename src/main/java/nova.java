@@ -8,8 +8,6 @@ public class nova {
         registro();
         general();
     }
-
-
     private static void registro() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Bienvenido (a) a NOVA (Numeros, Operaciones, Velocidad y Aventura");
@@ -59,12 +57,19 @@ public class nova {
     }
 
     private static void modulojuego() {
-        System.out.println("ok");
+
     }
 
     private static void modulocalculadora() {
     }
 
-    private static void moduloejercicios() {
+    private static void moduloejercicios()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Bienvenido a la seccion de ejercicios!!");
+        System.out.println("Seleccione la opcion");
+        System.out.println("1. Aritmetica \n2. Calculo de areas \n3. Regla de tres");
+        int opc = sc.nextInt();
+
     }
 }
