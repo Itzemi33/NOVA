@@ -59,7 +59,7 @@ public class nova {
     }
 
     private static void modulojuego() {
-        System.out.println("olk");
+        System.out.println("ok");
     }
 
     private static void modulocalculadora() {
