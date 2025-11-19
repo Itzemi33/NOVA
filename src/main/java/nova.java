@@ -65,11 +65,7 @@ public class nova {
 
     private static void moduloejercicios()
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Bienvenido a la seccion de ejercicios!!");
-        System.out.println("Seleccione la opcion");
-        System.out.println("1. Aritmetica \n2. Calculo de areas \n3. Regla de tres");
-        int opc = sc.nextInt();
+
 
     }
 }
