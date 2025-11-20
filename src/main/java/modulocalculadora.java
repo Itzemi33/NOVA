@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class modulocalculadora {
     public static void main(String[] args) {
+        gral();
+    }
+    public static void gral() {
+
 
         //Variables
         Scanner teclado = new Scanner(System.in);
@@ -10,10 +14,10 @@ public class modulocalculadora {
         //Texto
         System.out.println("⋙⋙⋙⋙⋙¡¡Bienvenido a la seccion de calculadora!!⋘⋘⋘⋘⋘");
         do{
-        System.out.println("Seleccione la operación que desea realizar");
-        System.out.println("1. Aritmetica \n2. Calculo de areas \n3. Regla de tres");
+            System.out.println("Seleccione la operación que desea realizar");
+            System.out.println("1. Aritmetica \n2. Calculo de areas \n3. Regla de tres");
 
-        eleccion = teclado.nextInt();
+            eleccion = teclado.nextInt();
 
 
             switch (eleccion) {
@@ -27,9 +31,10 @@ public class modulocalculadora {
                     reglaDeTres();
                     break;
                 default:
-                    System.out.printf("Selecciona una opción valida");
+                    System.out.println("Selecciona una opción valida");
             }
         } while (eleccion != 3);
+
     }
 
     private static void aritmetica() {
