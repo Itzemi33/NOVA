@@ -229,7 +229,3 @@ class Juego
                 System.out.println();
             }
         }
-
-
-
-
