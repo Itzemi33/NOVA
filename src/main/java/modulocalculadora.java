@@ -20,7 +20,7 @@ public class modulocalculadora {
         //Texto
 
         System.out.println(ANSI_PURPLE +
-                ".d8888b.        d8888 888      .d8888b.  888     888 888             d8888 8888888b.   .d88888b.  8888888b.         d8888 \n" +
+                " .d8888b.        d8888 888      .d8888b.  888     888 888             d8888 8888888b.   .d88888b.  8888888b.         d8888 \n" +
                 "d88P  Y88b      d88888 888     d88P  Y88b 888     888 888            d88888 888  \"Y88b d88P\" \"Y88b 888   Y88b       d88888 \n" +
                 "888    888     d88P888 888     888    888 888     888 888           d88P888 888    888 888     888 888    888      d88P888 \n" +
                 "888           d88P 888 888     888        888     888 888          d88P 888 888    888 888     888 888   d88P     d88P 888 \n" +
@@ -87,7 +87,7 @@ public class modulocalculadora {
                     "                                   ║  4) División                                    ║\n"+
                     ANSI_RESET);
             System.out.println(ANSI_YELLOW +
-                    "                                   ╚════════════════════════════════════════════════╝" +
+                    "                                   ╚═════════════════════════════════════════════════╝" +
                     ANSI_RESET);
 
             System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
@@ -113,9 +113,11 @@ public class modulocalculadora {
     }
 
     private static void division() {
-        System.out.println("=============================");
-        System.out.println("Bienvenid@ a la sección división");
-        System.out.println("=============================");
+        System.out.println("⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
+        System.out.println(
+                "                          Bienvenid@ a la sección NOVA división                        \n"+
+                        "                En esta sección podras dividir números enteros y decimales                 ");
+        System.out.println("⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
 
     }
 
@@ -147,7 +149,7 @@ public class modulocalculadora {
         System.out.println("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
         System.out.println(
                 "                          Bienvenid@ a la sección NOVA resta                                    \n" +
-                "                  En esta sección podras restar números enteros y decimales                       ");
+                        "                  En esta sección podras restar números enteros y decimales                       ");
         System.out.println("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
 
         Scanner teclado = new Scanner(System.in);
@@ -225,7 +227,7 @@ public class modulocalculadora {
                "                                   ║  6) Rombo                                       ║" +
                ANSI_RESET);
        System.out.println(ANSI_YELLOW +
-               "                                   ╚════════════════════════════════════════════════╝" +
+               "                                   ╚═════════════════════════════════════════════════╝" +
                ANSI_RESET);
 
        System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
@@ -265,8 +267,8 @@ public class modulocalculadora {
                         "                   En esta sección podras calcular el área de un circulo                    ");
         System.out.println("●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●");
         System.out.println("\n" +
-                "                             Formula del área de un circulo                                         ");
-        System.out.println("                                  A = π·r²                                                     ");
+                           "                             Formula del área de un circulo                                         ");
+        System.out.println(ANSI_CYAN+"                                        A = π·r²                                                     "+ANSI_RESET);
 
         String repetir = "s";
         do {
@@ -275,11 +277,16 @@ public class modulocalculadora {
             double PI = 3.1416;
 
 
-            System.out.print(ANSI_RESET + " Radio: " + ANSI_RESET);
-            radio = teclado.nextDouble();
+            do {
+                System.out.print(ANSI_RESET + " Radio: " + ANSI_RESET);
+                radio = teclado.nextDouble();
+                if (radio<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (radio<=0);
             radioCua = radio * radio;
             area = PI * radioCua;
-            System.out.println("Area de circulo = " + area);
+            System.out.println(ANSI_PURPLE+"Area de circulo ="+area+ANSI_RESET);
 
 
             System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
@@ -295,6 +302,30 @@ public class modulocalculadora {
                 "                            Bienvenid@ a la sección NOVA cuadrado                          \n"+
                         "                   En esta sección podras calcular el área de un cuadrado                    ");
         System.out.println("▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨");
+        System.out.println("\n" +
+                "                             Formula del área de un cuadrado                                         ");
+        System.out.println(ANSI_CYAN+"                                        A = L·L                                                     "+ANSI_RESET);
+
+        String repetir = "s";
+        do {
+            Scanner teclado = new Scanner(System.in);
+            double lado, area;
+
+            do {
+                System.out.print(ANSI_RESET + " Longitud de un lado: " + ANSI_RESET);
+                lado = teclado.nextDouble();
+                if (lado<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (lado<=0);
+            area = lado * lado;
+            System.out.println(ANSI_PURPLE+"Area del cuadrado ="+area+ANSI_RESET);
+
+
+            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
     }
 
     private static void rombo() {
@@ -303,6 +334,40 @@ public class modulocalculadora {
                 "                            Bienvenid@ a la sección NOVA rombo                          \n"+
                         "                   En esta sección podras calcular el área de un rombo                    ");
         System.out.println("◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈");
+
+        System.out.println("\n" +
+                "                             Formula del área de un rombo                                         ");
+        System.out.println(ANSI_CYAN+"                                        A = (D·d)/2                                                     "+ANSI_RESET);
+
+        String repetir = "s";
+        do {
+            Scanner teclado = new Scanner(System.in);
+            double dMayor, dMenor,multi, area;
+
+            do {
+                System.out.print(ANSI_RESET + " Diagonal mayor: " + ANSI_RESET);
+                dMayor = teclado.nextDouble();
+                if (dMayor<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (dMayor<=0);
+
+            do {
+                System.out.print(ANSI_RESET + " Diagonal menor: " + ANSI_RESET);
+                dMenor = teclado.nextDouble();
+                if (dMenor<= 0 || dMenor>dMayor) {
+                    System.out.println("Ingrese un valor menor a la diagonal mayor");
+                }
+            }while (dMenor<=0 || dMenor>dMayor);
+            multi = dMayor * dMenor;
+            area = multi/2;
+            System.out.println(ANSI_PURPLE+"Area del rombo ="+area+ANSI_RESET);
+
+
+            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
     }
 
     private static void trapecio() {
@@ -311,6 +376,47 @@ public class modulocalculadora {
                 "                            Bienvenid@ a la sección NOVA trapecio                          \n"+
                 "                   En esta sección podras calcular el área de un trapecio                    ");
         System.out.println("◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩");
+        System.out.println("\n" +
+                "                             Formula del área de un trapecio                                         ");
+        System.out.println(ANSI_CYAN+"                                    A = [(B + b)/2]·h                                                     "+ANSI_RESET);
+
+        String repetir = "s";
+        do {
+            Scanner teclado = new Scanner(System.in);
+            double bMayor,bMenor,alt,suma, div, area;
+
+            do {
+                System.out.print(ANSI_RESET + " Base mayor: " + ANSI_RESET);
+                bMayor = teclado.nextDouble();
+                if (bMayor<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (bMayor<=0);
+
+            do {
+                System.out.print(ANSI_RESET + " Base menor: " + ANSI_RESET);
+                bMenor = teclado.nextDouble();
+                if (bMenor<= 0 || bMenor>bMayor) {
+                    System.out.println("La base menor no puede ser mayor a la base mayor");
+                }
+            }while (bMenor<=0 || bMenor>bMayor);
+
+            do {
+                System.out.print(ANSI_RESET + " Altura: " + ANSI_RESET);
+                alt = teclado.nextDouble();
+                if (alt<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (alt<=0);
+            suma = bMayor + bMenor;
+            div = suma/2;
+            area= div * alt;
+            System.out.println(ANSI_PURPLE+"Area del trapecio ="+area+ANSI_RESET);
+
+            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
     }
 
     private static void rectangulo() {
@@ -319,6 +425,40 @@ public class modulocalculadora {
                 "                            Bienvenid@ a la sección NOVA rectángulo                          \n"+
                 "                   En esta sección podras calcular el área de un rectangulo                    ");
         System.out.println("▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬");
+        System.out.println("\n" +
+                "                             Formula del área de un rectángulo                                         ");
+        System.out.println(ANSI_CYAN+"                                        A = b·h                                                     "+ANSI_RESET);
+
+        String repetir = "s";
+        do {
+            Scanner teclado = new Scanner(System.in);
+            double base, alt, area;
+
+            do {
+                System.out.print(ANSI_RESET + " Base: " + ANSI_RESET);
+                base = teclado.nextDouble();
+                if (base<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (base<=0);
+
+            do {
+                System.out.print(ANSI_RESET + " Altura: " + ANSI_RESET);
+                alt = teclado.nextDouble();
+                if (alt<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (alt<=0);
+
+
+            area = base * alt;
+            System.out.println(ANSI_PURPLE+"Area del rectángulo ="+area+ANSI_RESET);
+
+
+            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
     }
 
     private static void triangulo() {
@@ -327,6 +467,39 @@ public class modulocalculadora {
                 "                            Bienvenid@ a la sección NOVA triangulo                          \n"+
                         "                   En esta sección podras calcular el área de un triangulo                    ");
         System.out.println("▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽");
+        System.out.println("\n" +
+                "                             Formula del área de un triangulo                                         ");
+        System.out.println(ANSI_CYAN+"                                        A = (b·h)/2                                                     "+ANSI_RESET);
+
+        String repetir = "s";
+        do {
+            Scanner teclado = new Scanner(System.in);
+            double base, alt,multi, area;
+
+            do {
+                System.out.print(ANSI_RESET + " Base: " + ANSI_RESET);
+                base = teclado.nextDouble();
+                if (base<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (base<=0);
+
+            do {
+                System.out.print(ANSI_RESET + " Altura: " + ANSI_RESET);
+                alt = teclado.nextDouble();
+                if (alt<= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            }while (alt<=0);
+            multi = base * alt;
+            area = multi/2;
+            System.out.println(ANSI_PURPLE+"Area del triangulo ="+area+ANSI_RESET);
+
+
+            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
     }
 
     private static void reglaDeTres() {
