@@ -1,25 +1,57 @@
 import java.util.Scanner;
 
 public class modulocalculadora {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_WHITE = "\u001B[37m";
     public static void main(String[] args) {
         gral();
     }
+
     public static void gral() {
-
-
         //Variables
         Scanner teclado = new Scanner(System.in);
         int eleccion;
-
         //Texto
-        System.out.println("⋙⋙⋙⋙⋙¡¡Bienvenido a la seccion de calculadora!!⋘⋘⋘⋘⋘");
-        do{
-            System.out.println("Seleccione la operación que desea realizar");
-            System.out.println("1. Aritmetica \n2. Calculo de areas \n3. Regla de tres \n4. Volver");
+
+        System.out.println(ANSI_PURPLE +
+                ".d8888b.        d8888 888      .d8888b.  888     888 888             d8888 8888888b.   .d88888b.  8888888b.         d8888 \n" +
+                "d88P  Y88b      d88888 888     d88P  Y88b 888     888 888            d88888 888  \"Y88b d88P\" \"Y88b 888   Y88b       d88888 \n" +
+                "888    888     d88P888 888     888    888 888     888 888           d88P888 888    888 888     888 888    888      d88P888 \n" +
+                "888           d88P 888 888     888        888     888 888          d88P 888 888    888 888     888 888   d88P     d88P 888 \n" +
+                "888          d88P  888 888     888        888     888 888         d88P  888 888    888 888     888 8888888P\"     d88P  888 \n" +
+                "888    888  d88P   888 888     888    888 888     888 888        d88P   888 888    888 888     888 888 T88b     d88P   888 \n" +
+                "Y88b  d88P d8888888888 888     Y88b  d88P Y88b. .d88P 888       d8888888888 888  .d88P Y88b. .d88P 888  T88b   d8888888888 \n" +
+                " \"Y8888P\" d88P     888 88888888 \"Y8888P\"   \"Y88888P\"  88888888 d88P     888 8888888P\"   \"Y88888P\"  888   T88b d88P     888 \n" +
+                "                                                                                                                           \n" +
+                " " +
+                "\n" +
+                ANSI_RESET);
+        do {
+            System.out.println(ANSI_CYAN +
+                    "                                   ╔══════════════════════════════════════════════╗\n" +
+                    "                                   ║        NOVA CALCULADORA CUENTA CON:          ║\n" +
+                    "                                   ╠══════════════════════════════════════════════╣" + ANSI_RESET);
+
+            System.out.println(ANSI_PURPLE +
+                    "                                   ║  1) Aritmética                               ║\n" +
+                    "                                   ║  2) Cálculo de áreas                         ║\n" +
+                    "                                   ║  3) Regla de tres                            ║\n" +
+                    "                                   ║  4) Volver                                   ║" +
+                    ANSI_RESET);
+
+            System.out.println(ANSI_YELLOW +
+                    "                                   ╚══════════════════════════════════════════════╝" +
+                    ANSI_RESET);
+
+            System.out.print(ANSI_RESET + " Seleccione una opción: " + ANSI_RESET);
 
             eleccion = teclado.nextInt();
-
-
             switch (eleccion) {
                 case 1:
                     aritmetica();
@@ -35,35 +67,34 @@ public class modulocalculadora {
                 default:
                     System.out.println("Selecciona una opción valida");
             }
-        } while (eleccion>4 || eleccion<=0);
+        } while (eleccion > 4 || eleccion <= 0);
 
     }
 
-    private static void aritmetica()
-    {
+    private static void aritmetica() {
         Scanner teclado2 = new Scanner(System.in);
-        int eleccionAri=0;
-        do{
-        System.out.println("Bienvenid@ a operaciones aritmeticas");
-        System.out.println("1.Suma \n2.Resta \n3.Multiplicación \n4.División");
-        eleccionAri= teclado2.nextInt();
-        switch (eleccionAri) {
-            case 1:
-                suma();
-                break;
-            case 2:
-                resta();
-                break;
-            case 3:
-                multiplicacion();
-                break;
-            case 4:
-                division();
-                break;
-            default:
-                System.out.println("Selecciona una opción valida");
-        }
-    } while (eleccionAri>3 || eleccionAri<=0);
+        int eleccionAri = 0;
+        do {
+            System.out.println("Bienvenid@ a operaciones aritmeticas");
+            System.out.println("1.Suma \n2.Resta \n3.Multiplicación \n4.División");
+            eleccionAri = teclado2.nextInt();
+            switch (eleccionAri) {
+                case 1:
+                    suma();
+                    break;
+                case 2:
+                    resta();
+                    break;
+                case 3:
+                    multiplicacion();
+                    break;
+                case 4:
+                    division();
+                    break;
+                default:
+                    System.out.println("Selecciona una opción valida");
+            }
+        } while (eleccionAri > 3 || eleccionAri <= 0);
 
     }
 
@@ -73,10 +104,26 @@ public class modulocalculadora {
         System.out.println("=============================");
     }
 
-    private static void multiplicacion() {
-        System.out.println("=============================");
-        System.out.println("Bienvenid@ a la sección multiplicación");
-        System.out.println("=============================");
+    private static void multiplicacion()
+    {
+            System.out.println("=============================");
+            System.out.println("Bienvenid@ a la sección multiplicación");
+            System.out.println("=============================");
+            Scanner teclado = new Scanner(System.in);
+            System.out.println("Ingresa un número");
+        double multiplicacion;
+        String opcion = "s";
+        // Ciclo que suma muchos númerosssssssssssss
+        while (opcion.equalsIgnoreCase("s"))
+        {
+            System.out.print("Ingresa un número: ");
+            double num = teclado.nextDouble();
+            System.out.print("Ingresa otro número: ");
+            double num2 = teclado.nextDouble();
+            multiplicacion = num2 * num;
+            System.out.print("¿Quieres agregar otro número? (s/n): ");
+            opcion = teclado.next();
+        }
     }
 
     private static void resta() {
@@ -91,25 +138,62 @@ public class modulocalculadora {
         System.out.println("Ingrese los numeros a restar");
         Scanner teclado2=new Scanner(System.in);
         int n = teclado2.nextInt();
-
-
     }
     private static void suma() {
-        System.out.println("=============================");
-        System.out.println("Bienvenid@ a la sección suma");
-        System.out.println("=============================");
+        Scanner teclado = new Scanner(System.in);
 
+        System.out.println("###############################################################################################");
+        System.out.println("Bienvenido a la sección NOVA suma, donde podrás sumar números enteros y decimales");
+        System.out.println("===============================================================================================");
 
- }
+        String repetir = "s";
 
-   private static void calculoDeAreas() {
+        do {
+            double suma = 0;
+            String opcion = "s";
+
+            // Ciclo que suma muchos números
+            while (opcion.equalsIgnoreCase("s")) {
+                System.out.print("Ingresa un número: ");
+                double num = teclado.nextDouble();
+                suma = suma + num;
+                System.out.print("¿Quieres agregar otro número? (s/n): ");
+                opcion = teclado.next();
+            }
+            System.out.println("El resultado es: " + suma);
+
+            System.out.print("¿Quieres repetir la sección de suma? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
+
+    }
+
+    private static void calculoDeAreas() {
 
         Scanner teclado = new Scanner(System.in);
         int eleccioncalc=0;
         System.out.println("Bienvenid@ a calculo de áreas");
    do{
-        System.out.println("Elija la operación que desea realizar");
-        System.out.println("1.Triangulo \n2.Rectangulo \n3.Cuadrado \n4.Circulo \n5.Trapecio \n6.Rombo");
+       System.out.println(ANSI_CYAN +
+               "                                   ╔═════════════════════════════════════════════════╗\n" +
+               "                                   ║    BIENVENIDO A LA CALCULADORA DE DE ÁREAS:     ║\n" +
+               "                                   ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
+
+       System.out.println(ANSI_PURPLE +
+               "                                   ║  1) Triángulo                                   ║\n" +
+               "                                   ║  2) Rectángulo                                  ║\n" +
+               "                                   ║  3) Cuadrado                                    ║\n" +
+               "                                   ║  4) Circulo                                     ║\n"+
+               "                                   ║  5) Trapecio                                    ║\n"+
+               "                                   ║  6) Rombo                                       ║" +
+               ANSI_RESET);
+       System.out.println(ANSI_YELLOW +
+               "                                   ╚════════════════════════════════════════════════╝" +
+               ANSI_RESET);
+
+       System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
+
         eleccioncalc= teclado.nextInt();
 
         switch (eleccioncalc) {
@@ -179,3 +263,4 @@ public class modulocalculadora {
         System.out.println("Bienvenid@ a calculo de regla de tres");
     }
 }
+
