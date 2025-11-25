@@ -116,13 +116,16 @@ public class modulocalculadora {
         System.out.println("=============================");
         System.out.println("Bienvenid@ a la sección división");
         System.out.println("=============================");
+
     }
 
     private static void multiplicacion()
     {
-            System.out.println("=============================");
-            System.out.println("Bienvenid@ a la sección multiplicación");
-            System.out.println("=============================");
+            System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
+            System.out.println(
+                    "                          Bienvenid@ a la sección NOVA multiplicación                        \n"+
+                    "                En esta sección podras multiplicar números enteros y decimales                 ");
+            System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
             Scanner teclado = new Scanner(System.in);
             System.out.println("Ingresa un número");
         double multiplicacion;
@@ -141,24 +144,43 @@ public class modulocalculadora {
     }
 
     private static void resta() {
-        System.out.println("=============================");
-        System.out.println("Bienvenid@ a la sección resta");
-        System.out.println("=============================");
+        System.out.println("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
+        System.out.println(
+                "                          Bienvenid@ a la sección NOVA resta                                    \n" +
+                "                  En esta sección podras restar números enteros y decimales                       ");
+        System.out.println("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
 
         Scanner teclado = new Scanner(System.in);
-        System.out.println("Ingresa la cantidad de numeros a restar");
-        int cantResta= teclado.nextInt();
+        String repetir = "s";
 
-        System.out.println("Ingrese los numeros a restar");
-        Scanner teclado2=new Scanner(System.in);
-        int n = teclado2.nextInt();
+        do {
+            double resta = 0;
+            String opcion = "s";
+
+            // Ciclo que resta muchos números
+            while (opcion.equalsIgnoreCase("s")) {
+                System.out.print("Ingresa un número: ");
+                double num = teclado.nextDouble();
+                resta = resta - num;
+                System.out.print("¿Quieres agregar otro número? (s/n): ");
+                opcion = teclado.next();
+            }
+            System.out.println("El resultado es: " + resta);
+
+            System.out.print("¿Quieres repetir la sección de suma? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
+
     }
     private static void suma() {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("###############################################################################################");
-        System.out.println("Bienvenido a la sección NOVA suma, donde podrás sumar números enteros y decimales");
-        System.out.println("===============================================================================================");
+        System.out.println("##################################################################################################");
+        System.out.println(
+                "                                  Bienvenid@ a la sección NOVA suma                           \n"+
+                "                        En esta sección podrás sumar números enteros y decimales               ");
+        System.out.println("##################################################################################################");
 
         String repetir = "s";
 
