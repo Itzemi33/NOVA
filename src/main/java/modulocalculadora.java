@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class modulocalculadora {
@@ -503,7 +504,14 @@ public class modulocalculadora {
     }
 
     private static void reglaDeTres() {
-        System.out.println("Bienvenid@ a calculo de regla de tres");
+        System.out.println("⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
+        System.out.println(
+                "                            Bienvenid@ a la sección NOVA calculo de regla de tres                          \n"+
+                "                   En esta sección podras calcular algun valor utilizando regla de tres                    ");
+        System.out.println("⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
+        System.out.println("\n"+ ANSI_CYAN+
+                "                                            DEFINICIÓN                                                     " +ANSI_RESET);
+        System.out.println("");
     }
 }
 
