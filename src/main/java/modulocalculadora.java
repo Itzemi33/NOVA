@@ -98,6 +98,8 @@ public class modulocalculadora {
         System.out.println("=============================");
         System.out.println("Bienvenid@ a la sección suma");
         System.out.println("=============================");
+
+
  }
 
    private static void calculoDeAreas() {
@@ -151,6 +153,7 @@ public class modulocalculadora {
     private static void rombo() {
         System.out.println("=============================");
         System.out.println("Bienvenid@ a la sección rombo");
+        System.out.println("Hola mundo");
         System.out.println("=============================");
     }
 
