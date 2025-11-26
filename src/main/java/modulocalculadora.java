@@ -82,7 +82,7 @@ public class modulocalculadora {
                     "                                   ║  1) Suma                                        ║\n" +
                     "                                   ║  2) Resta                                       ║\n" +
                     "                                   ║  3) Multipicación                               ║\n" +
-                    "                                   ║  4) División                                    ║\n"+
+                    "                                   ║  4) División                                    ║"+
                     ANSI_RESET);
             System.out.println(ANSI_YELLOW +
                     "                                   ╚═════════════════════════════════════════════════╝" +
@@ -585,12 +585,202 @@ public class modulocalculadora {
     private static void reglaDeTres() {
         System.out.println("⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
         System.out.println(
-                "                            Bienvenid@ a la sección NOVA calculo de regla de tres                          \n"+
-                "                   En esta sección podras calcular algun valor utilizando regla de tres                    ");
+                           "                                   Bienvenid@ a la sección:                                     \n"+ANSI_BLUE +
+                           "                    __   __   __        __      __   __    ___  __   __  __                       \n" +
+                           "                   |__| |_   | _  |    |__|    |  | |_      |  |__| |_  |__                       \n"+
+                           "                   | ⋱  |__  |__| |__  |  |    |__| |__     |  | ⋱  |__  __|                      \n" +ANSI_RESET+
+                                   "\n"+
+                           "               En esta sección podras calcular algun valor utilizando regla de tres                    ");
         System.out.println("⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
-        System.out.println("\n"+ ANSI_CYAN+
-                "                                            DEFINICIÓN                                                     " +ANSI_RESET);
-        System.out.println("");
+        System.out.println("\n"+ ANSI_GREEN +
+                           "                                      DEFINICIÓN                                              " +ANSI_RESET);
+        System.out.println("METODO MATEMÁTICO QUE PERMITE CALCULAR UN VALOR DESCONOCIDO CUANDO SE CONOCEN OTROS TRES VALORES \n" +
+                           "                                  EN UNA PROPORCION                                                ");
+        System.out.println("___________________________________________________________________________________________________");
+        System.out.println("                              Organización de regla de tres:                                     \n" +ANSI_CYAN+
+                           "                                       A       C                                             \n"+
+                           "                                     ----- = -----                                           \n" +
+                           "                                       B       D                                               "+"\n"+ANSI_RESET);
+
+        Scanner teclado=new Scanner(System.in);
+        String repetir = "s";
+        do {
+            String eleccion;
+            do {
+                System.out.println("¿Cuál es la posición de su incognita \n" + "A\n" + "B\n" + "C\n" + "D\n");
+                eleccion = teclado.next().toUpperCase();
+
+                if (!eleccion.equals("A") && !eleccion.equals("B") && !eleccion.equals("C") && !eleccion.equals("D")) {
+                    System.out.println("Opción inválida, intenta de nuevo.");
+                }
+            }while (!eleccion.equals("A") && !eleccion.equals("B") && !eleccion.equals("C") && !eleccion.equals("D"));
+
+            switch (eleccion) {
+                case "A":
+                    A();
+                    break;
+                case "B":
+                    B();
+                    break;
+                case "C":
+                    C();
+                    break;
+                case "D":
+                    D();
+                    break;
+            }
+            System.out.print("¿Quieres repetir regla de tres? (s/n): ");
+            repetir = teclado.next();
+
+        } while (repetir.equalsIgnoreCase("s"));
+
+    }
+
+    private static void D() {
+        System.out.println("Ingresa los valores de cada variable");
+
+            Scanner teclado = new Scanner(System.in);
+            double A, B, C, D, multi;
+
+            do {
+                System.out.print(ANSI_RESET + " A: " + ANSI_RESET);
+                A = teclado.nextDouble();
+                if (A <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (A <= 0);
+
+            do {
+                System.out.print(ANSI_RESET + " B: " + ANSI_RESET);
+                B = teclado.nextDouble();
+                if (B <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (B <= 0);
+
+
+            do {
+                System.out.print(ANSI_RESET + " C: " + ANSI_RESET);
+                C = teclado.nextDouble();
+                if (C <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (C <= 0);
+
+            multi = B * C;
+            D = multi / A;
+
+            System.out.println("El valor de la incognita D es: " + D);
+    }
+
+    private static void C() {
+        System.out.println("Ingresa los valores de cada variable");
+
+            Scanner teclado= new Scanner(System.in);
+            double A, B, C, D, multi;
+
+            do {
+                System.out.print(ANSI_RESET + " A: " + ANSI_RESET);
+                A = teclado.nextDouble();
+                if (A <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (A <= 0);
+
+            do {
+                System.out.print(ANSI_RESET + " B: " + ANSI_RESET);
+                B = teclado.nextDouble();
+                if (B <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (B <= 0);
+
+
+            do {
+                System.out.print(ANSI_RESET + " D: " + ANSI_RESET);
+                D = teclado.nextDouble();
+                if (D <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (D <= 0);
+
+            multi = D * A;
+            C = multi / B;
+
+            System.out.println("El valor de la incognita C es: " + C);
+    }
+
+    private static void B() {
+        System.out.println("Ingresa los valores de cada variable");
+
+            Scanner teclado= new Scanner(System.in);
+            double A, B, C, D, multi;
+
+            do {
+                System.out.print(ANSI_RESET + " A: " + ANSI_RESET);
+                A = teclado.nextDouble();
+                if (A <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (A <= 0);
+
+            do {
+                System.out.print(ANSI_RESET + " C: " + ANSI_RESET);
+                C = teclado.nextDouble();
+                if (C <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (C <= 0);
+
+            do {
+                System.out.print(ANSI_RESET + " D: " + ANSI_RESET);
+                D = teclado.nextDouble();
+                if (D <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (D <= 0);
+
+            multi = D * A;
+            B = multi / C;
+
+            System.out.println("El valor de la incognita B es: " + B);
+
+    }
+
+    private static void A() {
+        System.out.println("Ingresa los valores de cada variable");
+
+            Scanner teclado = new Scanner(System.in);
+            double A, B, C, D, multi;
+
+            do {
+                System.out.print(ANSI_RESET + " B: " + ANSI_RESET);
+                B = teclado.nextDouble();
+                if (B <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (B <= 0);
+
+            do {
+                System.out.print(ANSI_RESET + " C: " + ANSI_RESET);
+                C = teclado.nextDouble();
+                if (C <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (C <= 0);
+
+            do {
+                System.out.print(ANSI_RESET + " D: " + ANSI_RESET);
+                D = teclado.nextDouble();
+                if (D <= 0) {
+                    System.out.println("Ingresa un numero valido");
+                }
+            } while (D <= 0);
+
+            multi = B * C;
+            A = multi / D;
+
+            System.out.println("El valor de la incognita A es: " + A);
     }
 }
 
