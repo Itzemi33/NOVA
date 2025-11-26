@@ -119,6 +119,7 @@ public class modulocalculadora {
                 "                          Bienvenid@ a la sección NOVA división                        \n"+
                         "                En esta sección podras dividir números enteros y decimales                 ");
         System.out.println("⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
+        System.out.println("");
         Scanner teclado = new Scanner(System.in);
         String repetir = "s";
 
@@ -294,11 +295,19 @@ public class modulocalculadora {
     private static void circulo() {
         System.out.println("●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●");
         System.out.println(
-                "                            Bienvenid@ a la sección NOVA circulo                          \n"+
-                        "                   En esta sección podras calcular el área de un circulo                    ");
+                "                                Bienvenid@ a la sección:                            ");
+        System.out.println(ANSI_PURPLE +
+                "                       _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                   |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                   | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                   | |C  | | |I  | | |R  | | |C  | | |U  | | |L  | | |O  | |\n" +
+                "                   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                   |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                                         "+ANSI_RESET);
+        System.out.println("                     En esta sección podras calcular el área de un círculo                    ");
         System.out.println("●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●");
-        System.out.println("\n" +
-                           "                             Formula del área de un circulo                                         ");
+        System.out.println( "                             Formula del área de un circulo                                         ");
         System.out.println(ANSI_CYAN+"                                        A = π·r²                                                     "+ANSI_RESET);
 
         String repetir = "s";
@@ -328,13 +337,21 @@ public class modulocalculadora {
     }
 
     private static void cuadrado() {
-        System.out.println("▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨");
+        System.out.println("▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▨▣▣▨▣▣▣▣▨▨");
         System.out.println(
-                "                            Bienvenid@ a la sección NOVA cuadrado                          \n"+
-                        "                   En esta sección podras calcular el área de un cuadrado                    ");
-        System.out.println("▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨");
-        System.out.println("\n" +
-                "                             Formula del área de un cuadrado                                         ");
+                "                                Bienvenid@ a la sección:                            ");
+        System.out.println(ANSI_BLUE +
+                "                 _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                 |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                 | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                 | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                 | |C  | | |U  | | |A  | | |D  | | |R  | | |A  | | |D  | | |O  | |\n" +
+                "                 | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                 |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                                                 "+ANSI_RESET);
+        System.out.println("                     En esta sección podras calcular el área de un cuadrado                    ");
+        System.out.println("▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▣▣▨▨▨▣▣▣▣▨▨");
+        System.out.println("                         Formula del área de un cuadrado                                         ");
         System.out.println(ANSI_CYAN+"                                        A = L·L                                                     "+ANSI_RESET);
 
         String repetir = "s";
@@ -362,10 +379,18 @@ public class modulocalculadora {
     private static void rombo() {
         System.out.println("◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈");
         System.out.println(
-                "                            Bienvenid@ a la sección NOVA rombo                          \n"+
-                        "                   En esta sección podras calcular el área de un rombo                    ");
+                "                                Bienvenid@ a la sección:                            ");
+        System.out.println(ANSI_BLUE +
+                "                       _______ _______ _______ _______ _______ \n" +
+                "                      |\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                      | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                      | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                      | |R  | | |O  | | |M  | | |B  | | |O  | |\n" +
+                "                      | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                      |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                       "+ANSI_RESET);
+        System.out.println("                     En esta sección podras calcular el área de un rombo         ");
         System.out.println("◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈");
-
         System.out.println("\n" +
                 "                             Formula del área de un rombo                                         ");
         System.out.println(ANSI_CYAN+"                                        A = (D·d)/2                                                     "+ANSI_RESET);
@@ -404,8 +429,17 @@ public class modulocalculadora {
     private static void trapecio() {
         System.out.println("◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩");
         System.out.println(
-                "                            Bienvenid@ a la sección NOVA trapecio                          \n"+
-                "                   En esta sección podras calcular el área de un trapecio                    ");
+                "                                Bienvenid@ a la sección:                            ");
+        System.out.println(ANSI_PURPLE + "                                                                 \n" +
+                "                   _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                  |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                  | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                  | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                  | |T  | | |R  | | |A  | | |P  | | |E  | | |C  | | |I  | | |O  | |\n" +
+                "                  | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                  |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                                                 \n"+ANSI_RESET);
+        System.out.println("                     En esta sección podras calcular el área de un trapecio                    ");
         System.out.println("◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩");
         System.out.println("\n" +
                 "                             Formula del área de un trapecio                                         ");
@@ -453,8 +487,17 @@ public class modulocalculadora {
     private static void rectangulo() {
         System.out.println("▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬");
         System.out.println(
-                "                            Bienvenid@ a la sección NOVA rectángulo                          \n"+
-                "                   En esta sección podras calcular el área de un rectangulo                    ");
+                "                                Bienvenid@ a la sección:                            ");
+        System.out.println(ANSI_PURPLE +"                                                                                 \n" +
+                " _______ _______ _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "| |R  | | |E  | | |C  | | |T  | | |A  | | |N  | | |G  | | |U  | | |L  | | |O  | |\n" +
+                "| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                                                                 \n"+ANSI_RESET);
+        System.out.println("                     En esta sección podras calcular el área de un rectángulo                    ");
         System.out.println("▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬");
         System.out.println("\n" +
                 "                             Formula del área de un rectángulo                                         ");
@@ -495,11 +538,20 @@ public class modulocalculadora {
     private static void triangulo() {
         System.out.println("▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽");
         System.out.println(
-                "                            Bienvenid@ a la sección NOVA triangulo                          \n"+
-                        "                   En esta sección podras calcular el área de un triangulo                    ");
+                "                                Bienvenid@ a la sección:                            ");
+        System.out.println(ANSI_PURPLE +"                                                                         \n" +
+                "                    _______ _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                | |T  | | |R  | | |I  | | |A  | | |N  | | |G  | | |U  | | |L  | | |O  | |\n" +
+                "                | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                                                         \n"+ANSI_RESET);
+        System.out.println("                     En esta sección podras calcular el área de un triángulo                    ");
         System.out.println("▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽");
         System.out.println("\n" +
-                "                             Formula del área de un triangulo                                         ");
+                "                             Formula del área de un triángulo                                         ");
         System.out.println(ANSI_CYAN+"                                        A = (b·h)/2                                                     "+ANSI_RESET);
 
         String repetir = "s";

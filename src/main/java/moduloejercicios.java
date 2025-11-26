@@ -12,7 +12,7 @@ public class moduloejercicios
     {
         Scanner sc = new Scanner(System.in);
         int opc;
-
+            System.out.println("");
             System.out.println("Bienvenido a la seccion de ejercicios!!");
         do
         {
