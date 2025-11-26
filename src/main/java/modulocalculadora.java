@@ -384,23 +384,27 @@ public class modulocalculadora {
     }
 
     private static void rombo() {
-        System.out.println("◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈");
         System.out.println(
-                "                                Bienvenid@ a la sección:                            ");
+                "                            ◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈");
+        System.out.println(
+                "                                                               Bienvenid@ a la sección:                            ");
         System.out.println(ANSI_BLUE +
-                "                       _______ _______ _______ _______ _______ \n" +
-                "                      |\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
-                "                      | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                      | |   | | |   | | |   | | |   | | |   | |\n" +
-                "                      | |R  | | |O  | | |M  | | |B  | | |O  | |\n" +
-                "                      | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                      |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                                       _______ _______ _______ _______ _______ \n" +
+                "                                                       |\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                                                       | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                                       | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                                                       | |R  | | |O  | | |M  | | |B  | | |O  | |\n" +
+                "                                                       | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                                       |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
                 "                                       "+ANSI_RESET);
-        System.out.println("                     En esta sección podras calcular el área de un rombo         ");
-        System.out.println("◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈");
+        System.out.println(
+                "                                                    En esta sección podras calcular el área de un rombo         ");
+        System.out.println(
+                "                            ◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈◆◇◈");
         System.out.println("\n" +
-                "                             Formula del área de un rombo                                         ");
-        System.out.println(ANSI_CYAN+"                                        A = (D·d)/2                                                     "+ANSI_RESET);
+                "                                                          Formula del área de un rombo                                         ");
+        System.out.println(ANSI_CYAN+
+                "                                                                  A = (D·d)/2                                                     "+ANSI_RESET);
 
         String repetir = "s";
         do {
@@ -434,23 +438,27 @@ public class modulocalculadora {
     }
 
     private static void trapecio() {
-        System.out.println("◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩");
         System.out.println(
-                "                                Bienvenid@ a la sección:                            ");
+                "                            ◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩");
+        System.out.println(
+                "                                                                Bienvenid@ a la sección:                            ");
         System.out.println(ANSI_PURPLE + "                                                                 \n" +
-                "                   _______ _______ _______ _______ _______ _______ _______ _______ \n" +
-                "                  |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
-                "                  | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                  | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
-                "                  | |T  | | |R  | | |A  | | |P  | | |E  | | |C  | | |I  | | |O  | |\n" +
-                "                  | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                  |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                               _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                                               |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                                               | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                               | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                                               | |T  | | |R  | | |A  | | |P  | | |E  | | |C  | | |I  | | |O  | |\n" +
+                "                                               | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                               |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
                 "                                                                 \n"+ANSI_RESET);
-        System.out.println("                     En esta sección podras calcular el área de un trapecio                    ");
-        System.out.println("◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩");
+        System.out.println(
+                "                                                   En esta sección podras calcular el área de un trapecio                    ");
+        System.out.println(
+                "                            ◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩◩");
         System.out.println("\n" +
-                "                             Formula del área de un trapecio                                         ");
-        System.out.println(ANSI_CYAN+"                                    A = [(B + b)/2]·h                                                     "+ANSI_RESET);
+                "                                                              Formula del área de un trapecio                                         ");
+        System.out.println(ANSI_CYAN+
+                "                                                                   A = [(B + b)/2]·h                                                     "+ANSI_RESET);
 
         String repetir = "s";
         do {
@@ -492,23 +500,27 @@ public class modulocalculadora {
     }
 
     private static void rectangulo() {
-        System.out.println("▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬");
         System.out.println(
-                "                                Bienvenid@ a la sección:                            ");
+                "                            ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬");
+        System.out.println(
+                "                                                               Bienvenid@ a la sección:                            ");
         System.out.println(ANSI_PURPLE +"                                                                                 \n" +
-                " _______ _______ _______ _______ _______ _______ _______ _______ _______ _______ \n" +
-                "|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
-                "| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
-                "| |R  | | |E  | | |C  | | |T  | | |A  | | |N  | | |G  | | |U  | | |L  | | |O  | |\n" +
-                "| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                   _______ _______ _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                                   |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                                   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                   | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                                   | |R  | | |E  | | |C  | | |T  | | |A  | | |N  | | |G  | | |U  | | |L  | | |O  | |\n" +
+                "                                   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                   |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
                 "                                                                                 \n"+ANSI_RESET);
-        System.out.println("                     En esta sección podras calcular el área de un rectángulo                    ");
-        System.out.println("▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬");
+        System.out.println(
+                "                                               En esta sección podras calcular el área de un rectángulo                    ");
+        System.out.println(
+                "                            ▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬▭▬");
         System.out.println("\n" +
-                "                             Formula del área de un rectángulo                                         ");
-        System.out.println(ANSI_CYAN+"                                        A = b·h                                                     "+ANSI_RESET);
+                "                                                           Formula del área de un rectángulo                                         ");
+        System.out.println(ANSI_CYAN+
+                "                                                                       A = b·h                                                     "+ANSI_RESET);
 
         String repetir = "s";
         do {
@@ -543,23 +555,27 @@ public class modulocalculadora {
     }
 
     private static void triangulo() {
-        System.out.println("▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽");
         System.out.println(
-                "                                Bienvenid@ a la sección:                            ");
+                "                            ▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽");
+        System.out.println(
+                "                                                               Bienvenid@ a la sección:                            ");
         System.out.println(ANSI_PURPLE +"                                                                         \n" +
-                "                    _______ _______ _______ _______ _______ _______ _______ _______ _______ \n" +
-                "                |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
-                "                | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
-                "                | |T  | | |R  | | |I  | | |A  | | |N  | | |G  | | |U  | | |L  | | |O  | |\n" +
-                "                | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                        _______ _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                                        |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                                        | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                        | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                                        | |T  | | |R  | | |I  | | |A  | | |N  | | |G  | | |U  | | |L  | | |O  | |\n" +
+                "                                        | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                        |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
                 "                                                                         \n"+ANSI_RESET);
-        System.out.println("                     En esta sección podras calcular el área de un triángulo                    ");
-        System.out.println("▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽");
+        System.out.println(
+                "                                                  En esta sección podras calcular el área de un triángulo                    ");
+        System.out.println(
+                "                            ▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽▲▽");
         System.out.println("\n" +
-                "                             Formula del área de un triángulo                                         ");
-        System.out.println(ANSI_CYAN+"                                        A = (b·h)/2                                                     "+ANSI_RESET);
+                "                                                           Formula del área de un triángulo                                         ");
+        System.out.println(ANSI_CYAN+
+                "                                                                    A = (b·h)/2                                                     "+ANSI_RESET);
 
         String repetir = "s";
         do {
@@ -593,24 +609,24 @@ public class modulocalculadora {
     }
 
     private static void reglaDeTres() {
-        System.out.println("⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
+        System.out.println("                            ⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
         System.out.println(
-                           "                                   Bienvenid@ a la sección:                                     \n"+ANSI_BLUE +
-                           "                    __   __   __        __      __   __    ___  __   __  __                       \n" +
-                           "                   |__| |_   | _  |    |__|    |  | |_      |  |__| |_  |__                       \n"+
-                           "                   | ⋱  |__  |__| |__  |  |    |__| |__     |  | ⋱  |__  __|                      \n" +ANSI_RESET+
+                           "                                                                    Bienvenid@ a la sección:                                     \n"+ANSI_BLUE +
+                           "                                                    __   __   __        __      __   __    ___  __   __  __                       \n" +
+                           "                                                   |__| |_   | _  |    |__|    |  | |_      |  |__| |_  |__                       \n"+
+                           "                                                   | ⋱  |__  |__| |__  |  |    |__| |__     |  | ⋱  |__  __|                      \n" +ANSI_RESET+
                                    "\n"+
-                           "               En esta sección podras calcular algun valor utilizando regla de tres                    ");
-        System.out.println("⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
+                           "                                               En esta sección podras calcular algun valor utilizando regla de tres                    ");
+        System.out.println("                            ⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓⩓");
         System.out.println("\n"+ ANSI_GREEN +
-                           "                                      DEFINICIÓN                                              " +ANSI_RESET);
-        System.out.println("METODO MATEMÁTICO QUE PERMITE CALCULAR UN VALOR DESCONOCIDO CUANDO SE CONOCEN OTROS TRES VALORES \n" +
-                           "                                  EN UNA PROPORCION                                                ");
-        System.out.println("___________________________________________________________________________________________________");
-        System.out.println("                              Organización de regla de tres:                                     \n" +ANSI_CYAN+
-                           "                                       A       C                                             \n"+
-                           "                                     ----- = -----                                           \n" +
-                           "                                       B       D                                               "+"\n"+ANSI_RESET);
+                           "                                                                            DEFINICIÓN                                              " +ANSI_RESET);
+        System.out.println("                                METODO MATEMÁTICO QUE PERMITE CALCULAR UN VALOR DESCONOCIDO CUANDO SE CONOCEN OTROS TRES VALORES \n" +
+                           "                                                                        EN UNA PROPORCION                                                ");
+        System.out.println("                            ___________________________________________________________________________________________________");
+        System.out.println("                                                                    Organización de regla de tres:                                     \n" +ANSI_CYAN+
+                           "                                                                             A       C                                             \n"+
+                           "                                                                           ----- = -----                                           \n" +
+                           "                                                                             B       D                                               "+"\n"+ANSI_RESET);
 
         Scanner teclado=new Scanner(System.in);
         String repetir = "s";
