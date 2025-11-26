@@ -7,7 +7,7 @@ public class moduloejercicios
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
     static int puntos = 0;
-    static int ejercicioactual = 0;
+    static int ejercicioactualaritmetica = 0;
     public static void main(String[] args)
     {
         gral();
@@ -78,7 +78,7 @@ public class moduloejercicios
                 "Tienes que multiplicar el numero por si mismo la cantidad de veces que indica el exponente\nEn este caso\n5x5x5=125",
                 "Tenemos que usar el teorema de pitagoras\nc²=a²+b²\nSustituimos los valores en la formula:\nc²=9²+12²\nSacamos raiz de ambos lados para eliminar el cuadrado en c²\nc=√9²+12²\nAl resolver la raiz nos dara el resultado correcto"
         };
-        for (int i = ejercicioactual; i < problemas.length ; i++){
+        for (int i = ejercicioactualaritmetica; i < problemas.length ; i++){
             boolean respondido = false;
             while (!respondido) {
                 System.out.println("Ejercicio " + (i + 1) + ":");
@@ -98,7 +98,7 @@ public class moduloejercicios
                 }
                 respondido = true;
             }
-            ejercicioactual = i + 1;
+            ejercicioactualaritmetica = i + 1;
             System.out.println("Presiona ENTER para ir al siguiente ejercicio");
             sc.nextLine();
         }
