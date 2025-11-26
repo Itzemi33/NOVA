@@ -21,56 +21,56 @@ class Juego
             static final char NAVE = 'A';
             static final char DISPARO = '|';
 
-            public static void iniciar()
-            {
+            public static void iniciar() {
                 Scanner entrada = new Scanner(System.in);
                 Random azar = new Random();
                 //NAVES ENEMIGAS AL AZAR
 
                 int cantidadEnemigos = 3;
                 int balasDisponibles = 6;
-                int turnosMaximos = 1000;
 
-                System.out.println("  ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●");
-                System.out.println("              ∭∭∭∭∭       ∭∭∭              ∭∭∭∭∭∭               ∭∭∭             ∭∭∭                ∭∭∭∭∭∭         ");
-                System.out.println("              ∭∭∭∭∭∭     ∭∭∭           ∭∭∭       ∭∭∭            ∭∭∭           ∭∭∭                ∭∭∭  ∭∭∭         ");
-                System.out.println("              ∭∭∭ ∭∭∭    ∭∭∭         ∭∭∭           ∭∭∭           ∭∭∭         ∭∭∭                ∭∭∭    ∭∭∭        ");
-                System.out.println("              ∭∭∭  ∭∭∭   ∭∭∭         ∭∭∭           ∭∭∭            ∭∭∭       ∭∭∭                ∭∭∭      ∭∭∭       ");
-                System.out.println("              ∭∭∭   ∭∭∭  ∭∭∭         ∭∭∭           ∭∭∭             ∭∭∭     ∭∭∭                ∭∭∭∭∭∭∭∭∭∭∭     ");
-                System.out.println("              ∭∭∭    ∭∭∭ ∭∭∭         ∭∭∭           ∭∭∭              ∭∭∭   ∭∭∭                ∭∭∭           ∭∭∭     ");
-                System.out.println("              ∭∭∭     ∭∭∭∭∭∭           ∭∭∭       ∭∭∭                 ∭∭∭ ∭∭∭                ∭∭∭             ∭∭∭    ");
-                System.out.println("              ∭∭∭       ∭∭∭∭∭              ∭∭∭∭∭∭                      ∭∭∭∭∭                 ∭∭∭              ∭∭∭  ");
-                System.out.println("  ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●");
+                System.out.println("           ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●");
+                System.out.println("                    ∭∭∭∭∭       ∭∭∭              ∭∭∭∭∭∭               ∭∭∭             ∭∭∭                ∭∭∭∭∭∭         ");
+                System.out.println("                    ∭∭∭∭∭∭     ∭∭∭           ∭∭∭       ∭∭∭            ∭∭∭           ∭∭∭                ∭∭∭  ∭∭∭         ");
+                System.out.println("                    ∭∭∭ ∭∭∭    ∭∭∭         ∭∭∭           ∭∭∭           ∭∭∭         ∭∭∭                ∭∭∭    ∭∭∭        ");
+                System.out.println("                    ∭∭∭  ∭∭∭   ∭∭∭         ∭∭∭           ∭∭∭            ∭∭∭       ∭∭∭                ∭∭∭      ∭∭∭       ");
+                System.out.println("                    ∭∭∭   ∭∭∭  ∭∭∭         ∭∭∭           ∭∭∭             ∭∭∭     ∭∭∭                ∭∭∭∭∭∭∭∭∭∭∭     ");
+                System.out.println("                    ∭∭∭    ∭∭∭ ∭∭∭         ∭∭∭           ∭∭∭              ∭∭∭   ∭∭∭                ∭∭∭           ∭∭∭     ");
+                System.out.println("                    ∭∭∭     ∭∭∭∭∭∭           ∭∭∭       ∭∭∭                 ∭∭∭ ∭∭∭                ∭∭∭             ∭∭∭    ");
+                System.out.println("                    ∭∭∭       ∭∭∭∭∭              ∭∭∭∭∭∭                      ∭∭∭∭∭                 ∭∭∭              ∭∭∭  ");
+                System.out.println("            ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●");
                 System.out.println("\n");
-                System.out.println("                                                                 Gran trabajo!!                                             ");
-                System.out.println("                           Bienvenido NOVA    ⋙    Entra a la órbita de juego y disfruta    ⋙    Estas list@!     ");
-                System.out.println("\n");
-                System.out.println("                                                    Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.  ");
-                System.out.println("                                                    ¿Desea comenzar el juego? (1 = si, 2 = no):                           ");
+                while (true) {
 
-                String opcion = entrada.nextLine().trim();
+                    System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
+                    System.out.println("                    ∷                                             Gran trabajo!!                                                                   ∷");
+                    System.out.println("                    ∷       Bienvenido NOVA    ⋙    Entra a la órbita de juego y disfruta    ⋙    Estas list@!                                    ∷");
+                    System.out.println("                    ∷                                                                                                                               ∷\n");
+                    System.out.println("                    ∷                                Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.       ∷ ");
+                    System.out.println("                    ∷                                ¿Desea comenzar el juego? (1 = si, 2 = no):                                                    ∷ ");
+                    System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
 
-                if (!opcion.equals("1")) {
-                    System.out.println("Juego cancelado por el usuario.");
-                    entrada.close();
-                    return;
+                    String opcion = entrada.nextLine().trim();
+                    if (opcion.equals("1")) {
+                        break;
+                    } else if (opcion.equals("2")) {
+                        System.out.println("Regresando...");
+                        return;
+                    } else {
+                        System.out.println("Opcion no valida. Escribe 1 para jugar o 2 para salir");
+                    }
                 }
-
                 // area de juego
                 char[][] tablero = new char[ALTO][ANCHO];
                 for (int fila = 0; fila < ALTO; fila++)
-                    Arrays.fill(tablero[fila], VACIO);
+                    Arrays.fill(tablero[fila], VACIO);//llena espacios
 
                 int posicionJugadorX = ANCHO / 2;
                 int posicionJugadorY = ALTO - 1;
 
                 tablero[posicionJugadorY][posicionJugadorX] = NAVE;
-
                 //enemigos
-                tablero[posicionJugadorY][posicionJugadorX] = NAVE;
-
-                //enemigos
-                ArrayList<Integer> columnasEnemigas = new ArrayList<>();
+                ArrayList<Integer> columnasEnemigas = new ArrayList<>();//hashsit por si se duplica
                 while (columnasEnemigas.size() < cantidadEnemigos) {
                     int c = azar.nextInt(ANCHO);
                     if (!columnasEnemigas.contains(c))
@@ -90,7 +90,7 @@ class Juego
                 int turno = 0;
 
                 // ciclo de juego
-                while (!juegoTerminado && turno < turnosMaximos) {
+                while (!juegoTerminado) {
 
                     turno++;
 
@@ -176,7 +176,7 @@ class Juego
                         Iterator<int[]> itEn = enemigos.iterator();
                         //ELIMINAR
                         while (itEn.hasNext()) {
-                            int[] e = itEn.next();
+                            int[] e = itEn.next();//borrar enemigo
 
                             if (e[0] == nuevaFila && e[1] == columna) {
                                 itEn.remove();//QUITAR
@@ -212,12 +212,8 @@ class Juego
                 if (ganar) {
                     System.out.println("\n¡Felicidades! Lo has logrado ");
                     System.out.println("¡¡¡MISION EXITOSA!!!");
-                } else if (!juegoTerminado && turno >= turnosMaximos)
-                {
-                    System.out.println("Se alcanzó el número máximo de turnos (T_T)");
                 }
-
-                System.out.println("FinAlgoritmo.");
+                System.out.println("Fin del juego...Regresando...");
                 entrada.close();
             }
 
@@ -236,4 +232,5 @@ class Juego
                 }
                 System.out.println();
             }
+
         }
