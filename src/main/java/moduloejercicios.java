@@ -121,13 +121,25 @@ public class moduloejercicios
         Scanner sc = new Scanner(System.in);
         String []problemas=
                 {
-                        "",
-                        "",
+                        "2 kilos de manzanas cuestan $40. ¿Cuánto cuestan 5 kilos?",
+                        "3 cuadernos cuestan $90. ¿Cuánto cuestan 7 cuadernos?",
+                        "Un coche recorre 120 km con 10 litros de gasolina. ¿Cuántos km recorrerá con 25 litros?",
+                        "4 litros de pintura cubren 20 m². ¿Cuántos m² cubrirán 10 litros?",
+                        "6 horas de trabajo producen 18 piezas. ¿Cuántas piezas se producen en 15 horas?",
+                        "8 metros de tela cuestan $560. ¿Cuánto cuestan 15 metros?",
+                        "Una impresora imprime 240 hojas en 12 minutos. ¿Cuántas hojas imprimirá en 30 minutos?"
+
+
                 };
-        String []respuestascorrectas = {"",""};
+        String []respuestascorrectas = {"100","210","300","50","45","1050","600"};
         String []explicaciones = {
-                "",
-                ""
+                "Debes multiplicar los 5 kg por $40 y dividir entre 2 kg",
+                "Debes multiplicar los 7 cuadernos por $90 y dividir entre 3 cuadernos",
+                "Debes multiplicar los 25 lt por 120 km y dividir entre 10 lt",
+                "Debes multiplicar los 10 lt por 20 m² y dividir entre 4 lt",
+                "Debes multiplicar las 15 horas por 18 piezas y dividir entre 6 horas",
+                "Debes multiplicar los 15 m por $560 y dividir entre 8 m",
+                "Debes multiplicar los 30 min por 240 hojas y dividir entre 12 minutos"
         };
         for (int i = ejercicioactualregladetres; i < problemas.length ; i++){
             boolean respondido = false;
