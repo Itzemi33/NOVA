@@ -1,9 +1,10 @@
 import java.util.Scanner;
-public class nova {
+public class
+nova {
     static String nombre;
     static String usuario;
     static String password;
-    static int edad;
+    static int edad =-1;
     public static void main(String[] args) {
         registro();
         general();
@@ -13,8 +14,27 @@ public class nova {
         System.out.println("Bienvenido (a) a NOVA (Numeros, Operaciones, Velocidad y Aventura");
         System.out.println("Ingresa tu nombre:");
         nombre = sc.nextLine();
-        System.out.println("Ingresa tu edad:");
-        edad = sc.nextInt();
+
+        boolean valida = false;
+        while (!valida){
+            System.out.println("Ingresa tu edad:");
+            if (sc.hasNextInt()){
+                edad = sc.nextInt();
+                if (edad > 0 && edad < 110) {
+                    valida = true;
+
+                }
+                else {
+                    System.out.println("Ingresa una edad valida");
+                }
+
+            }
+            else {
+                System.out.println("Ingresa un numero");
+                sc.next();
+            }
+        }
+
         sc.nextLine();
         System.out.println("Crea un usuario:");
         usuario = sc.nextLine();

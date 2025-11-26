@@ -74,18 +74,18 @@ public class modulocalculadora {
         int eleccionAri = 0;
         do {
             System.out.println(ANSI_CYAN +
-                    "                                   ╔═════════════════════════════════════════════════╗\n" +
-                    "                                   ║      BIENVENIDO A OPERACIONES ARITMÉTICAS       ║\n" +
-                    "                                   ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
+                    "                                             ╔═════════════════════════════════════════════════╗\n" +
+                    "                                             ║      BIENVENIDO A OPERACIONES ARITMÉTICAS       ║\n" +
+                    "                                             ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
 
             System.out.println(ANSI_PURPLE +
-                    "                                   ║  1) Suma                                        ║\n" +
-                    "                                   ║  2) Resta                                       ║\n" +
-                    "                                   ║  3) Multipicación                               ║\n" +
-                    "                                   ║  4) División                                    ║"+
+                    "                                             ║  1) Suma                                        ║\n" +
+                    "                                             ║  2) Resta                                       ║\n" +
+                    "                                             ║  3) Multipicación                               ║\n" +
+                    "                                             ║  4) División                                    ║"+
                     ANSI_RESET);
             System.out.println(ANSI_YELLOW +
-                    "                                   ╚═════════════════════════════════════════════════╝" +
+                    "                                             ╚═════════════════════════════════════════════════╝" +
                     ANSI_RESET);
 
             System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
@@ -111,11 +111,11 @@ public class modulocalculadora {
     }
 
     private static void division() {
-        System.out.println("⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
+        System.out.println("                    ⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
         System.out.println(
-                "                          Bienvenid@ a la sección NOVA división                        \n"+
-                        "                En esta sección podras dividir números enteros y decimales                 ");
-        System.out.println("⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
+                           "                                                     Bienvenid@ a la sección NOVA división                        \n"+
+                           "                                           En esta sección podras dividir números enteros y decimales                 ");
+        System.out.println("                    ⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
         System.out.println("");
         Scanner teclado = new Scanner(System.in);
         String repetir = "s";
@@ -147,11 +147,11 @@ public class modulocalculadora {
 
     private static void multiplicacion()
     {
-            System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
+            System.out.println("                     ◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
             System.out.println(
-                    "                          Bienvenid@ a la sección NOVA multiplicación                        \n"+
-                    "                En esta sección podras multiplicar números enteros y decimales                 ");
-            System.out.println("◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
+                               "                                                  Bienvenid@ a la sección NOVA multiplicación                        \n"+
+                               "                                         En esta sección podras multiplicar números enteros y decimales                 ");
+            System.out.println("                     ◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈◈");
         Scanner teclado = new Scanner(System.in);
         String repetir = "s";
 
@@ -177,11 +177,11 @@ public class modulocalculadora {
     }
 
     private static void resta() {
-        System.out.println("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
+        System.out.println("                           ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
         System.out.println(
-                "                          Bienvenid@ a la sección NOVA resta                                    \n" +
-                        "                  En esta sección podras restar números enteros y decimales                       ");
-        System.out.println("※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
+                           "                                                           Bienvenid@ a la sección NOVA resta                                    \n" +
+                           "                                                En esta sección podras restar números enteros y decimales                       ");
+        System.out.println("                           ※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※");
                 Scanner teclado = new Scanner(System.in);
                 String repetir = "s";
                 do
@@ -207,11 +207,11 @@ public class modulocalculadora {
     private static void suma() {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.println("##################################################################################################");
+        System.out.println("                           ##################################################################################################");
         System.out.println(
-                "                                  Bienvenid@ a la sección NOVA suma                           \n"+
-                "                        En esta sección podrás sumar números enteros y decimales               ");
-        System.out.println("##################################################################################################");
+                           "                                                              Bienvenid@ a la sección NOVA suma                           \n"+
+                           "                                                 En esta sección podrás sumar números enteros y decimales               ");
+        System.out.println("                           ##################################################################################################");
 
         String repetir = "s";
 
@@ -243,20 +243,20 @@ public class modulocalculadora {
         System.out.println("Bienvenid@ a calculo de áreas");
    do{
        System.out.println(ANSI_CYAN +
-               "                                   ╔═════════════════════════════════════════════════╗\n" +
-               "                                   ║    BIENVENIDO A LA CALCULADORA DE DE ÁREAS:     ║\n" +
-               "                                   ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
+               "                                              ╔═════════════════════════════════════════════════╗\n" +
+               "                                              ║    BIENVENIDO A LA CALCULADORA DE DE ÁREAS:     ║\n" +
+               "                                              ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
 
        System.out.println(ANSI_PURPLE +
-               "                                   ║  1) Triángulo                                   ║\n" +
-               "                                   ║  2) Rectángulo                                  ║\n" +
-               "                                   ║  3) Cuadrado                                    ║\n" +
-               "                                   ║  4) Circulo                                     ║\n"+
-               "                                   ║  5) Trapecio                                    ║\n"+
-               "                                   ║  6) Rombo                                       ║" +
+               "                                              ║  1) Triángulo                                   ║\n" +
+               "                                              ║  2) Rectángulo                                  ║\n" +
+               "                                              ║  3) Cuadrado                                    ║\n" +
+               "                                              ║  4) Circulo                                     ║\n"+
+               "                                              ║  5) Trapecio                                    ║\n"+
+               "                                              ║  6) Rombo                                       ║" +
                ANSI_RESET);
        System.out.println(ANSI_YELLOW +
-               "                                   ╚═════════════════════════════════════════════════╝" +
+               "                                              ╚═════════════════════════════════════════════════╝" +
                ANSI_RESET);
 
        System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
@@ -290,22 +290,27 @@ public class modulocalculadora {
     }
 
     private static void circulo() {
-        System.out.println("●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●");
         System.out.println(
-                "                                Bienvenid@ a la sección:                            ");
+                "                            ●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●");
+        System.out.println(
+                "                                                           Bienvenid@ a la sección:                            ");
         System.out.println(ANSI_PURPLE +
-                "                       _______ _______ _______ _______ _______ _______ _______ \n" +
-                "                   |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
-                "                   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                   | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
-                "                   | |C  | | |I  | | |R  | | |C  | | |U  | | |L  | | |O  | |\n" +
-                "                   | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                   |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                              _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                                             |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                                             | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                             | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                                             | |C  | | |I  | | |R  | | |C  | | |U  | | |L  | | |O  | |\n" +
+                "                                             | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                             |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
                 "                                                         "+ANSI_RESET);
-        System.out.println("                     En esta sección podras calcular el área de un círculo                    ");
-        System.out.println("●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●");
-        System.out.println( "                             Formula del área de un circulo                                         ");
-        System.out.println(ANSI_CYAN+"                                        A = π·r²                                                     "+ANSI_RESET);
+        System.out.println(
+                "                                               En esta sección podras calcular el área de un círculo                    ");
+        System.out.println(
+                "                            ●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●○●");
+        System.out.println(
+                "                                                                Formula del área de un circulo                                         ");
+        System.out.println(ANSI_CYAN+
+                "                                                                           A = π·r²                                                     "+ANSI_RESET);
 
         String repetir = "s";
         do {
@@ -334,22 +339,27 @@ public class modulocalculadora {
     }
 
     private static void cuadrado() {
-        System.out.println("▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▨▣▣▨▣▣▣▣▨▨");
         System.out.println(
-                "                                Bienvenid@ a la sección:                            ");
+                "                            ▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣");
+        System.out.println(
+                "                                                           Bienvenid@ a la sección:                            ");
         System.out.println(ANSI_BLUE +
-                "                 _______ _______ _______ _______ _______ _______ _______ _______ \n" +
-                "                 |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
-                "                 | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                 | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
-                "                 | |C  | | |U  | | |A  | | |D  | | |R  | | |A  | | |D  | | |O  | |\n" +
-                "                 | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
-                "                 |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
+                "                                       _______ _______ _______ _______ _______ _______ _______ _______ \n" +
+                "                                       |\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\\     /|\n" +
+                "                                       | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                       | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |\n" +
+                "                                       | |C  | | |U  | | |A  | | |D  | | |R  | | |A  | | |D  | | |O  | |\n" +
+                "                                       | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |\n" +
+                "                                       |/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|/_____\\|\n" +
                 "                                                                 "+ANSI_RESET);
-        System.out.println("                     En esta sección podras calcular el área de un cuadrado                    ");
-        System.out.println("▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▣▣▨▨▨▣▣▣▣▨▨");
-        System.out.println("                         Formula del área de un cuadrado                                         ");
-        System.out.println(ANSI_CYAN+"                                        A = L·L                                                     "+ANSI_RESET);
+        System.out.println(
+                "                                           En esta sección podras calcular el área de un cuadrado                    ");
+        System.out.println(
+                "                            ▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣▣▣▨▨▨▨▣▣");
+        System.out.println(
+                "                                                         Formula del área de un cuadrado                                         ");
+        System.out.println(ANSI_CYAN+
+                "                                                                     A = L·L                                                     "+ANSI_RESET);
 
         String repetir = "s";
         do {
