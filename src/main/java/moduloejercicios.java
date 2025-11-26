@@ -2,6 +2,13 @@ import java.util.Scanner;
 
 public class moduloejercicios
 {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_YELLOW = "\u001B[33m";
+    public static final String ANSI_BLUE = "\u001B[34m";
+    public static final String ANSI_PURPLE = "\u001B[35m";
+    public static final String ANSI_CYAN = "\u001B[36m";
     static int puntos = 0;
     static String respuestas;
     public static void main(String[] args)
@@ -12,12 +19,34 @@ public class moduloejercicios
     {
         Scanner sc = new Scanner(System.in);
         int opc;
-            System.out.println("");
-            System.out.println("Bienvenido a la seccion de ejercicios!!");
+        System.out.println(ANSI_BLUE+
+                "                ██████████       █████ ██████████ ███████████     █████████  █████   █████████  █████    ███████     █████████ \n" +
+                "               ░░███░░░░░█      ░░███ ░░███░░░░░█░░███░░░░░███   ███░░░░░███░░███   ███░░░░░███░░███   ███░░░░░███  ███░░░░░███\n" +
+                "                ░███  █ ░        ░███  ░███  █ ░  ░███    ░███  ███     ░░░  ░███  ███     ░░░  ░███  ███     ░░███░███    ░░░ \n" +
+                "                ░██████          ░███  ░██████    ░██████████  ░███          ░███ ░███          ░███ ░███      ░███░░█████████ \n" +
+                "                ░███░░█          ░███  ░███░░█    ░███░░░░░███ ░███          ░███ ░███          ░███ ░███      ░███ ░░░░░░░░███\n" +
+                "                ░███ ░   █ ███   ░███  ░███ ░   █ ░███    ░███ ░░███     ███ ░███ ░░███     ███ ░███ ░░███     ███  ███    ░███\n" +
+                "                ██████████░░████████   ██████████ █████   █████ ░░█████████  █████ ░░█████████  █████ ░░░███████░  ░░█████████ \n" +
+                "                ░░░░░░░░░░  ░░░░░░░░   ░░░░░░░░░░ ░░░░░   ░░░░░   ░░░░░░░░░  ░░░░░   ░░░░░░░░░  ░░░░░    ░░░░░░░     ░░░░░░░░░  \n" +
+                "                                                                              "+ANSI_RESET);
+        System.out.println("                       Bienvenido NOVA EJERCICIOS    ⋙    Entra a la órbita de ejercicios y disfruta    ⋙    Estas list@!     ");
         do
         {
-            System.out.println("Selecciona la opcion que desees");
-            System.out.println("1. Aritmetica \n2. Calculo de areas \n3. Regla de tres \n4. Volver");
+            System.out.println(ANSI_CYAN +
+                    "                                           ╔══════════════════════════════════════════════╗\n" +
+                    "                                           ║    SELECCIONA LA OPCIÓN QUE DESEES HACER:    ║\n" +
+                    "                                           ╠══════════════════════════════════════════════╣" + ANSI_RESET);
+
+            System.out.println(ANSI_PURPLE +
+                    "                                           ║  1) Aritmética                               ║\n" +
+                    "                                           ║  2) Cálculo de áreas                         ║\n" +
+                    "                                           ║  3) Regla de tres                            ║\n" +
+                    "                                           ║  4) Volver                                   ║" +
+                    ANSI_RESET);
+
+            System.out.println(ANSI_BLUE +
+                    "                                           ╚══════════════════════════════════════════════╝" +
+                    ANSI_RESET);
             opc = sc.nextInt();
             switch (opc)
             {
