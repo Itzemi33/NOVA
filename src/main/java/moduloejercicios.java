@@ -8,6 +8,8 @@ public class moduloejercicios
     public static final String ANSI_CYAN = "\u001B[36m";
     static int puntos = 0;
     static int ejercicioactualaritmetica = 0;
+    static int ejercicioactualregladetres = 0;
+    static int ejercicioactualcalcareas = 0;
     public static void main(String[] args)
     {
         gral();
@@ -99,19 +101,117 @@ public class moduloejercicios
                 respondido = true;
             }
             ejercicioactualaritmetica = i + 1;
-            System.out.println("Presiona ENTER para ir al siguiente ejercicio");
-            sc.nextLine();
+            if (ejercicioactualaritmetica == problemas.length) {
+                System.out.println("Acabaste todos los ejercicios felicidades");
+                System.out.println("Sumaste un total de " + puntos + " Novashots");
+                System.out.println("Presiona ENTER para salir");
+                sc.nextLine();
+                return;
+            }
+            else {
+                System.out.println("Presiona ENTER para ir al siguiente ejercicio");
+                sc.nextLine();
+            }
+
         }
     }
 
     private static void regladetres()
     {
+        Scanner sc = new Scanner(System.in);
+        String []problemas=
+                {
+                        "",
+                        "",
+                };
+        String []respuestascorrectas = {"",""};
+        String []explicaciones = {
+                "",
+                ""
+        };
+        for (int i = ejercicioactualregladetres; i < problemas.length ; i++){
+            boolean respondido = false;
+            while (!respondido) {
+                System.out.println("Ejercicio " + (i + 1) + ":");
+                System.out.println(problemas[i]);
+                String respuesta = sc.nextLine();
+                if (respuesta.equalsIgnoreCase("calc")) {
+                    modulocalculadora.gral();
+                    System.out.println("Regresando al ejercicio.");
+                    continue;
+                }
+                if (respuesta.equalsIgnoreCase(respuestascorrectas[i])) {
+                    System.out.println("Correcto +5 Novashots");
+                    puntos = puntos + 5;
+                } else {
+                    System.out.println("Incorrecto, la respuesta correcta es: " + respuestascorrectas[i]);
+                    System.out.println("Explicacion: " + explicaciones[i]);
+                }
+                respondido = true;
+            }
+            ejercicioactualregladetres = i + 1;
+            if (ejercicioactualregladetres == problemas.length) {
+                System.out.println("Acabaste todos los ejercicios felicidades");
+                System.out.println("Sumaste un total de " + puntos + " Novashots");
+                System.out.println("Presiona ENTER para salir");
+                sc.nextLine();
+                return;
+            }
+            else {
+                System.out.println("Presiona ENTER para ir al siguiente ejercicio");
+                sc.nextLine();
+            }
 
+        }
     }
 
     private static void calculoareas()
     {
+        Scanner sc = new Scanner(System.in);
+        String []problemas=
+                {
+                        "",
+                        "",
+                };
+        String []respuestascorrectas = {"",""};
+        String []explicaciones = {
+                "",
+                ""
+        };
+        for (int i = ejercicioactualcalcareas; i < problemas.length ; i++){
+            boolean respondido = false;
+            while (!respondido) {
+                System.out.println("Ejercicio " + (i + 1) + ":");
+                System.out.println(problemas[i]);
+                String respuesta = sc.nextLine();
+                if (respuesta.equalsIgnoreCase("calc")) {
+                    modulocalculadora.gral();
+                    System.out.println("Regresando al ejercicio.");
+                    continue;
+                }
+                if (respuesta.equalsIgnoreCase(respuestascorrectas[i])) {
+                    System.out.println("Correcto +5 Novashots");
+                    puntos = puntos + 5;
+                } else {
+                    System.out.println("Incorrecto, la respuesta correcta es: " + respuestascorrectas[i]);
+                    System.out.println("Explicacion: " + explicaciones[i]);
+                }
+                respondido = true;
+            }
+            ejercicioactualcalcareas = i + 1;
+            if (ejercicioactualcalcareas == problemas.length) {
+                System.out.println("Acabaste todos los ejercicios felicidades");
+                System.out.println("Sumaste un total de " + puntos + " Novashots");
+                System.out.println("Presiona ENTER para salir");
+                sc.nextLine();
+                return;
+            }
+            else {
+                System.out.println("Presiona ENTER para ir al siguiente ejercicio");
+                sc.nextLine();
+            }
 
+        }
     }
     
 }
