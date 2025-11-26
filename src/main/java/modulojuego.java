@@ -17,7 +17,7 @@ class Juego
             static final int ALTO = 11;
 
             static final char VACIO = ' ';
-            static final char ENEMIGO = '&';
+            static final char ENEMIGO = '*';
             static final char NAVE = 'A';
             static final char DISPARO = '|';
 
@@ -25,6 +25,7 @@ class Juego
             {
                 Scanner entrada = new Scanner(System.in);
                 Random azar = new Random();
+                //NAVES ENEMIGAS AL AZAR
 
                 int cantidadEnemigos = 3;
                 int balasDisponibles = 6;
@@ -47,7 +48,6 @@ class Juego
                 System.out.println("                                                    Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.  ");
                 System.out.println("                                                    ¿Desea comenzar el juego? (1 = si, 2 = no):                           ");
 
-
                 String opcion = entrada.nextLine().trim();
 
                 if (!opcion.equals("1")) {
@@ -67,14 +67,17 @@ class Juego
                 tablero[posicionJugadorY][posicionJugadorX] = NAVE;
 
                 //enemigos
+                tablero[posicionJugadorY][posicionJugadorX] = NAVE;
+
+                //enemigos
                 ArrayList<Integer> columnasEnemigas = new ArrayList<>();
                 while (columnasEnemigas.size() < cantidadEnemigos) {
                     int c = azar.nextInt(ANCHO);
                     if (!columnasEnemigas.contains(c))
                         columnasEnemigas.add(c);
                 }
-
                 ArrayList<int[]> enemigos = new ArrayList<>();
+                //ARRAYLIST (AÑADIR O ELIMIAR ELEMENTOS)
                 for (int columna : columnasEnemigas)
                     enemigos.add(new int[]{0, columna}); //empiezan arriba
 
@@ -93,9 +96,11 @@ class Juego
 
                     for (int f = 0; f < ALTO; f++)
                         Arrays.fill(tablero[f], VACIO);
+                    //LLENAR
 
                     // mover nave
                     tablero[posicionJugadorY][posicionJugadorX] = NAVE;
+                    //COORDENADAS
 
                     // enemigos
                     for (int[] e : enemigos) {
@@ -134,6 +139,7 @@ class Juego
                     System.out.print("Ingresa comando: ");
 
                     String comando = entrada.nextLine().trim().toLowerCase();
+                    //TRIM(ESPACIOS),TOLOWER(MAYUSCULAS)
 
                     if (comando.equals("q")) {
                         System.out.println("                   Has salido del juego. Vuelve pronto te esperamos para regresar a la aventura!!");
@@ -149,6 +155,7 @@ class Juego
                             intentos++;
 
                             balas.add(new int[]{posicionJugadorY - 1, posicionJugadorX});
+                            //AÑADIR BALA
                             System.out.println("Disparaste. Balas restantes: " + balasDisponibles);
                         } else {
                             System.out.println("No tienes novashots restantes.");
@@ -167,11 +174,12 @@ class Juego
                         boolean impacto = false;
 
                         Iterator<int[]> itEn = enemigos.iterator();
+                        //ELIMINAR
                         while (itEn.hasNext()) {
                             int[] e = itEn.next();
 
                             if (e[0] == nuevaFila && e[1] == columna) {
-                                itEn.remove();
+                                itEn.remove();//QUITAR
                                 impacto = true;
                                 System.out.println("¡Muy bien! Eliminaste a un enemigo, continua así ");
                                 break;
@@ -207,7 +215,6 @@ class Juego
                 } else if (!juegoTerminado && turno >= turnosMaximos)
                 {
                     System.out.println("Se alcanzó el número máximo de turnos (T_T)");
-                    System.out.println("¡ Es hora de aprender !");
                 }
 
                 System.out.println("FinAlgoritmo.");
@@ -225,6 +232,7 @@ class Juego
                 System.out.print(" ");
                 for (int c = 0; c < tablero[0].length; c++) {
                     System.out.print((c % 10));
+                    //COLUMNAS IMPRESAS
                 }
                 System.out.println();
             }

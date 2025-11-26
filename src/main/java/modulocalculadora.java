@@ -122,7 +122,7 @@ public class modulocalculadora {
 
         do {
             System.out.print("Ingresa un número inicial para comenzar la división: ");
-            double division = teclado.nextDouble(); // Inicializa 'division' con el primer número
+            double division = teclado.nextDouble(); 
             String opcion = "s";
 
             // Ciclo que divide muchos números
