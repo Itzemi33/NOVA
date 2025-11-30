@@ -1,27 +1,17 @@
 import java.util.*;
 public class modulojuego {
+    static final int ANCHO = 19;
+    static final int ALTO = 20;
+
+    static final char VACIO = ' ';
+    static final char ENEMIGO = '*';
+    static final char NAVE = 'A';
+    static final char DISPARO = '|';
     public static void main(String[] args) {
         gral();
-
     }
-
-    public static void gral() {
-        Juego juego = new Juego();
-        Juego.iniciar();
-    }
-}
-class Juego
-{
-
-            static final int ANCHO = 20;
-            static final int ALTO = 11;
-
-            static final char VACIO = ' ';
-            static final char ENEMIGO = '*';
-            static final char NAVE = 'A';
-            static final char DISPARO = '|';
-
-            public static void iniciar() {
+    public static void gral()
+    {
                 Scanner entrada = new Scanner(System.in);
                 Random azar = new Random();
                 //NAVES ENEMIGAS AL AZAR
@@ -40,23 +30,28 @@ class Juego
                 System.out.println("                    ∭∭∭       ∭∭∭∭∭              ∭∭∭∭∭∭                      ∭∭∭∭∭                 ∭∭∭              ∭∭∭  ");
                 System.out.println("            ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●");
                 System.out.println("\n");
-                while (true) {
+                System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
+                System.out.println("                    ∷                                             Gran trabajo!!                                                                   ∷");
+                System.out.println("                    ∷       Bienvenido NOVA    ⋙    Entra a la órbita de juego y disfruta    ⋙    Estas list@!                                    ∷");
+                System.out.println("                    ∷                                                                                                                               ∷\n");
+                System.out.println("                    ∷                                Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.       ∷ ");
+                System.out.println("                    ∷                                ¿Desea comenzar el juego? (1 = si, 2 = no):                                                    ∷ ");
+                System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
 
-                    System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
-                    System.out.println("                    ∷                                             Gran trabajo!!                                                                   ∷");
-                    System.out.println("                    ∷       Bienvenido NOVA    ⋙    Entra a la órbita de juego y disfruta    ⋙    Estas list@!                                    ∷");
-                    System.out.println("                    ∷                                                                                                                               ∷\n");
-                    System.out.println("                    ∷                                Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.       ∷ ");
-                    System.out.println("                    ∷                                ¿Desea comenzar el juego? (1 = si, 2 = no):                                                    ∷ ");
-                    System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
-
+                while (true)
+                {
                     String opcion = entrada.nextLine().trim();
-                    if (opcion.equals("1")) {
+                    if (opcion.equals("1"))
+                    {
                         break;
-                    } else if (opcion.equals("2")) {
+                    }
+                    else if (opcion.equals("2"))
+                    {
                         System.out.println("Regresando...");
                         return;
-                    } else {
+                    }
+                    else
+                    {
                         System.out.println("Opcion no valida. Escribe 1 para jugar o 2 para salir");
                     }
                 }
@@ -65,10 +60,10 @@ class Juego
                 for (int fila = 0; fila < ALTO; fila++)
                     Arrays.fill(tablero[fila], VACIO);//llena espacios
 
-                int posicionJugadorX = ANCHO / 2;
-                int posicionJugadorY = ALTO - 1;
+                int X = ANCHO / 2;
+                int Y = ALTO - 1;
 
-                tablero[posicionJugadorY][posicionJugadorX] = NAVE;
+                tablero[Y][X] = NAVE;
                 //enemigos
                 ArrayList<Integer> columnasEnemigas = new ArrayList<>();//hashsit por si se duplica
                 while (columnasEnemigas.size() < cantidadEnemigos) {
@@ -99,7 +94,7 @@ class Juego
                     //LLENAR
 
                     // mover nave
-                    tablero[posicionJugadorY][posicionJugadorX] = NAVE;
+                    tablero[Y][X] = NAVE;
                     //COORDENADAS
 
                     // enemigos
@@ -145,16 +140,16 @@ class Juego
                         System.out.println("                   Has salido del juego. Vuelve pronto te esperamos para regresar a la aventura!!");
                         break;
                     } else if (comando.equals("a")) {
-                        if (posicionJugadorX > 0) posicionJugadorX--;
+                        if (X > 0)X--;
                     } else if (comando.equals("d")) {
-                        if (posicionJugadorX < ANCHO - 1) posicionJugadorX++;
+                        if (X < ANCHO - 1) X++;
                     } else if (comando.equals("s")) {
 
                         if (balasDisponibles > 0) {
                             balasDisponibles--;
                             intentos++;
 
-                            balas.add(new int[]{posicionJugadorY - 1, posicionJugadorX});
+                            balas.add(new int[]{Y - 1, X});
                             //AÑADIR BALA
                             System.out.println("Disparaste. Balas restantes: " + balasDisponibles);
                         } else {
@@ -198,7 +193,7 @@ class Juego
 
                     //perder
                     for (int[] e : enemigos) {
-                        if (e[0] >= posicionJugadorY) {
+                        if (e[0] >= Y) {
                             juegoTerminado = true;
                             System.out.println("Un enemigo llegó a tu orbita.");
                             System.out.println("Lo siento ╯︿╰ has perdido");
@@ -209,13 +204,14 @@ class Juego
                 }
 
                 //ganar
-                if (ganar) {
+                if (ganar)
+                {
                     System.out.println("\n¡Felicidades! Lo has logrado ");
                     System.out.println("¡¡¡MISION EXITOSA!!!");
                 }
                 System.out.println("Fin del juego...Regresando...");
                 entrada.close();
-            }
+                }
 
             static void imprimirTablero(char[][] tablero) {
                 for (int fila = 0; fila < tablero.length; fila++) {
