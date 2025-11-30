@@ -60,6 +60,7 @@ public class modulojuego {
                 for (int fila = 0; fila < ALTO; fila++)
                     Arrays.fill(tablero[fila], VACIO);//llena espacios
 
+
                 int X = ANCHO / 2;
                 int Y = ALTO - 1;
 
