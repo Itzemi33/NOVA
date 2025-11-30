@@ -16,8 +16,8 @@ nova {
         nombre = sc.nextLine();
 
         boolean valida = false;
+        System.out.println("Ingresa tu edad:");
         while (!valida){
-            System.out.println("Ingresa tu edad:");
             if (sc.hasNextInt()){
                 edad = sc.nextInt();
                 if (edad > 0 && edad < 110) {
@@ -48,43 +48,48 @@ nova {
 
     public static void general() {
         Scanner sc = new Scanner(System.in);
-        int opc;
+        int opc = 0;
 
             System.out.println("==================================");
             System.out.println("     Bienvenido a tu aventura");
             System.out.println("==================================");
             System.out.println("NOVA te ayudara a estudiar y repasar de una manera divertida y sencilla");
-        do {
-            System.out.println("Selecciona la opcion que desees");
-            System.out.println("1. Ejercicios \n2. Calculadora \n3. Juego \n4. Salir \nPara una mejor experiencia te recomendas la opcion Ejercicios para comenzar con el repaso");
-            opc = sc.nextInt();
-            switch (opc) {
-                case 1:
-                    moduloejercicios.gral();
-                    break;
-                case 2:
-                    modulocalculadora.gral();
-                    break;
-                case 3:
-                    modulojuego.gral();
-                    break;
-                case 4:
-                    int contador = 3;
-                    while (contador > 0)
-                    {
-                        System.out.println(contador);
-                        try {
-                            Thread.sleep(500);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                        contador --;
-                    }
-                    System.out.println("Hasta aqui llego nuestra aventura, nos vemos pronto!");
-                    break;
-                default:
-                    System.out.println("Opcion no valida");
 
+            System.out.println("Selecciona la opcion que desees");
+        do {
+            System.out.println("1. Ejercicios \n2. Calculadora \n3. Juego \n4. Salir \nPara una mejor experiencia te recomendas la opcion Ejercicios para comenzar con el repaso");
+            if (sc.hasNextInt()) {
+                opc = sc.nextInt();
+                switch (opc) {
+                    case 1:
+                        moduloejercicios.gral();
+                        break;
+                    case 2:
+                        modulocalculadora.gral();
+                        break;
+                    case 3:
+                        modulojuego.gral();
+                        break;
+                    case 4:
+                        int contador = 3;
+                        while (contador > 0) {
+                            System.out.println(contador);
+                            try {
+                                Thread.sleep(500);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                            contador--;
+                        }
+                        System.out.println("Hasta aqui llego nuestra aventura, nos vemos pronto!");
+                        break;
+                    default:
+                        System.out.println("Opcion no valida");
+
+                }
+            }else {
+                System.out.println("Error, ingresa un numero");
+                sc.nextLine();
             }
         } while (opc != 4);
 
