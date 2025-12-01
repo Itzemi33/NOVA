@@ -49,10 +49,10 @@ nova {
                 "                                             ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
 
         System.out.println(ANSI_PURPLE+
-                "                                             ║  Nombre:                                        ║\n" +
-                "                                             ║  Edad:                                          ║\n" +
-                "                                             ║  Usuario:                                       ║\n" +
-                "                                             ║  Contraseña:                                    ║"+
+                "                                                Nombre:                                         \n" +
+                "                                                Edad:                                           \n" +
+                "                                                Usuario:                                        \n" +
+                "                                                Contraseña:                                     "+
                 ANSI_RESET);
         System.out.println(ANSI_BLUE +
                 "                                             ╚═════════════════════════════════════════════════╝" +
@@ -65,10 +65,10 @@ nova {
                 "                                             ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
 
         System.out.println(ANSI_PURPLE+
-                "                                             ║  Nombre:"+nombre                              +"              ║\n" +
-                "                                             ║  Edad:                                          ║\n" +
-                "                                             ║  Usuario:                                       ║\n" +
-                "                                             ║  Contraseña:                                    ║"+
+                "                                                Nombre:"+nombre+                               "\n" +
+                "                                                Edad:                                           \n" +
+                "                                                Usuario:                                        \n" +
+                "                                                Contraseña:                                     "+
                 ANSI_RESET);
         System.out.println(ANSI_BLUE +
                 "                                             ╚═════════════════════════════════════════════════╝" +
@@ -99,10 +99,10 @@ nova {
                 "                                             ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
 
         System.out.println(ANSI_PURPLE+
-                "                                             ║  Nombre:"+nombre                              +"║\n" +
-                "                                             ║  Edad:"+edad                                 +" ║\n" +
-                "                                             ║  Usuario:                                       ║\n" +
-                "                                             ║  Contraseña:                                    ║"+
+                "                                                Nombre:"+nombre                              + "\n" +
+                "                                                Edad:"+edad                                 +"  \n" +
+                "                                                Usuario:                                        \n" +
+                "                                                Contraseña:                                     "+
                 ANSI_RESET);
         System.out.println(ANSI_BLUE +
                 "                                             ╚═════════════════════════════════════════════════╝" +
@@ -116,10 +116,10 @@ nova {
                 "                                             ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
 
         System.out.println(ANSI_PURPLE+
-                "                                             ║  Nombre:"+nombre                              +"║\n" +
-                "                                             ║  Edad:"+edad                                 +" ║\n" +
-                "                                             ║  Usuario:"+usuario                           +" ║\n" +
-                "                                             ║  Contraseña:                                    ║"+
+                "                                                Nombre:"+nombre                              +" \n" +
+                "                                                Edad:"+edad                                 +"  \n" +
+                "                                                Usuario:"+usuario                           +"  \n" +
+                "                                                Contraseña:                                     "+
                 ANSI_RESET);
         System.out.println(ANSI_BLUE +
                 "                                             ╚═════════════════════════════════════════════════╝" +
@@ -133,10 +133,10 @@ nova {
                 "                                             ╠═════════════════════════════════════════════════╣" + ANSI_RESET);
 
         System.out.println(ANSI_PURPLE+
-                "                                             ║  Nombre:"+nombre                              +"║\n" +
-                "                                             ║  Edad:"+edad                                 +" ║\n" +
-                "                                             ║  Usuario:"+usuario                           +" ║\n" +
-                "                                             ║  Contraseña:"+password                       +" ║"+
+                "                                                Nombre:"+nombre                              +" \n" +
+                "                                                Edad:"+edad                                 +"  \n" +
+                "                                                Usuario:"+usuario                           +"  \n" +
+                "                                                Contraseña:"+password                       +"  "+
                 ANSI_RESET);
         System.out.println(ANSI_BLUE +
                 "                                             ╚═════════════════════════════════════════════════╝" +
@@ -154,7 +154,7 @@ nova {
     public static void general() {
         Scanner sc = new Scanner(System.in);
         int opc = 0;
-        do {
+
             System.out.println(ANSI_BLUE+
                     "                                                        ███    ██  ██████  ██    ██  █████  \n" +
                     "                                                        ████   ██ ██    ██ ██    ██ ██   ██ \n" +
@@ -182,6 +182,7 @@ nova {
             System.out.println(ANSI_BLUE +
                     "                                             ╚═════════════════════════════════════════════════╝" +
                     ANSI_RESET);
+        do {
             if (sc.hasNextInt()) {
                 opc = sc.nextInt();
                 switch (opc) {
@@ -215,7 +216,7 @@ nova {
                 System.out.println("Error, ingresa un numero");
                 sc.nextLine();
             }
-        } while (opc != 4);
+        } while (opc > 4 || opc <=0);
 
     }
 
