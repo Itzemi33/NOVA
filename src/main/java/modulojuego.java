@@ -306,6 +306,7 @@ public class modulojuego {
                     continue mainLoop;
                 } else if (opf.equals("2")) {
                     System.out.println("Regresando al menú principal...");
+                    nova.general();
                     break mainLoop;
 
                 } else {
