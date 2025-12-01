@@ -211,6 +211,7 @@ public class modulojuego {
                                     disparado = true;
                                     break;
                                 }
+
                             }
                             if (!disparado) {
                                 System.out.println("                                                              No se pudo disparar");
