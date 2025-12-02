@@ -266,6 +266,7 @@ public class modulojuego {
                                 }
                             }
 
+
                             if (!elimino) {
                                 balas[y][0] = nuevaFila;
                             }
