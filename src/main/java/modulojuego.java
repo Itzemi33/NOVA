@@ -38,24 +38,25 @@ public class modulojuego {
         mainLoop:
         while (true)
         {
-            System.out.println("           ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●");
-            System.out.println("                    ∭∭∭∭∭       ∭∭∭              ∭∭∭∭∭∭               ∭∭∭             ∭∭∭                ∭∭∭∭∭∭         ");
-            System.out.println("                    ∭∭∭∭∭∭     ∭∭∭           ∭∭∭       ∭∭∭            ∭∭∭           ∭∭∭                ∭∭∭  ∭∭∭         ");
-            System.out.println("                    ∭∭∭ ∭∭∭    ∭∭∭         ∭∭∭           ∭∭∭           ∭∭∭         ∭∭∭                ∭∭∭    ∭∭∭        ");
-            System.out.println("                    ∭∭∭  ∭∭∭   ∭∭∭         ∭∭∭           ∭∭∭            ∭∭∭       ∭∭∭                ∭∭∭      ∭∭∭       ");
-            System.out.println("                    ∭∭∭   ∭∭∭  ∭∭∭         ∭∭∭           ∭∭∭             ∭∭∭     ∭∭∭                ∭∭∭∭∭∭∭∭∭∭∭     ");
-            System.out.println("                    ∭∭∭    ∭∭∭ ∭∭∭         ∭∭∭           ∭∭∭              ∭∭∭   ∭∭∭                ∭∭∭           ∭∭∭     ");
-            System.out.println("                    ∭∭∭     ∭∭∭∭∭∭           ∭∭∭       ∭∭∭                 ∭∭∭ ∭∭∭                ∭∭∭             ∭∭∭    ");
-            System.out.println("                    ∭∭∭       ∭∭∭∭∭              ∭∭∭∭∭∭                      ∭∭∭∭∭                 ∭∭∭              ∭∭∭  ");
-            System.out.println("            ●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●●");
-            System.out.println("\n");
-            System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷  ");
-            System.out.println("                    ∷                                             Gran trabajo!!                                                          ∷  ");
-            System.out.println("                    ∷       Bienvenido NOVA    ⋙    Entra a la órbita de juego y disfruta    ⋙    Estas list@!                          ∷   ");
-            System.out.println("                    ∷                                                                                                                     ∷  ");
-            System.out.println("                    ∷                        Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.                                                   ∷  ");
-            System.out.println("                    ∷                  ¿Desea comenzar el juego? (1 = si, 2 = no, 3 = elegir color de tu nave):                           ∷  ");
-            System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷  ");
+            System.out.println(moduloejercicios.ANSI_PURPLE+
+                    "                                                  █████ █████  █████ ██████████   █████████     ███████      \n" +
+                    "                                                 ░░███ ░░███  ░░███ ░░███░░░░░█  ███░░░░░███  ███░░░░░███    \n" +
+                    "                                                  ░███  ░███   ░███  ░███  █ ░  ███     ░░░  ███     ░░███   \n" +
+                    "                                                  ░███  ░███   ░███  ░██████   ░███         ░███      ░███   \n" +
+                    "                                                  ░███  ░███   ░███  ░███░░█   ░███    █████░███      ░███   \n" +
+                    "                                            ███   ░███  ░███   ░███  ░███ ░   █░░███  ░░███ ░░███     ███    \n" +
+                    "                                           ░░████████   ░░████████   ██████████ ░░█████████  ░░░███████░     \n" +
+                    "                                            ░░░░░░░░     ░░░░░░░░   ░░░░░░░░░░   ░░░░░░░░░     ░░░░░░░       \n" +
+                    "                                                                  \n"+ANSI_RESET);
+            System.out.println(modulocalculadora.ANSI_BLUE+
+                               "                 ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷  "+ANSI_RESET);
+            System.out.println("                 ∷                                             Gran trabajo!!                                                          ∷  ");
+            System.out.println("                 ∷       Bienvenido a la galaxia del juego    ⋙    Entra a la órbita de juego   ⋙    Estas list@!                    ∷   ");
+            System.out.println("                 ∷                                                                                                                     ∷  ");
+            System.out.println("                 ∷                        Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.                                                   ∷  ");
+            System.out.println("                 ∷                  ¿Desea comenzar el juego? (1 = si, 2 = no, 3 = elegir color de tu nave):                           ∷  ");
+            System.out.println(modulocalculadora.ANSI_BLUE+
+                               "                 ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷  "+ANSI_RESET);
             label:
             while (true) {
                 String opcion = entrada.nextLine().trim();
@@ -333,12 +334,20 @@ public class modulojuego {
 
     static void elegirColor(Scanner entrada) {
         while (true) {
-            System.out.println("\nElige el color de tu nave:");
-            System.out.println("1. " + ROSA + "Rosa" + ANSI_RESET);
-            System.out.println("2. " + AZUL + "Azul" + ANSI_RESET);
-            System.out.println("3. " + MORADO + "Morado" + ANSI_RESET);
-            System.out.println("4. " + VERDE + "Verde" + ANSI_RESET);
-            System.out.println("5. Regresar");
+            System.out.println(
+                    "                                               ╔══════════════════════════════════════════════╗\n" +
+                    "                                               ║         ELIGE EL COLOR DE TU NAVE:           ║\n" +
+                    "                                               ╠══════════════════════════════════════════════╣" );
+
+            System.out.println(
+                    "                                                  1) "+ROSA +"Rosa" + ANSI_RESET+"             \n" +
+                    "                                                  2) "+AZUL +"Azul" + ANSI_RESET+"             \n" +
+                    "                                                  3) "+MORADO +"Morado" + ANSI_RESET+"         \n" +
+                    "                                                  4) "+VERDE +"Verde" + ANSI_RESET+"           \n" +
+                    "                                                  5) Regresar                                  " );
+
+            System.out.println(AZUL+
+                    "                                               ╚══════════════════════════════════════════════╝"+ ANSI_RESET );
             System.out.print("Opción: ");
             String op = entrada.nextLine().trim();
             String elegido = null;
