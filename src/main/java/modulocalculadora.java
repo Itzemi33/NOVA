@@ -80,7 +80,7 @@ public class modulocalculadora {
     private static void aritmetica() {
         Scanner teclado2 = new Scanner(System.in);
         int eleccionAri;
-
+        do {
             System.out.println(ANSI_CYAN +
                     "                                             ╔═════════════════════════════════════════════════╗\n" +
                     "                                             ║      BIENVENIDO A OPERACIONES ARITMÉTICAS       ║\n" +
@@ -98,7 +98,7 @@ public class modulocalculadora {
                     ANSI_RESET);
 
             System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
-        do {
+
             if (teclado2.hasNextInt()) {
                 eleccionAri = teclado2.nextInt();
                 switch (eleccionAri) {
@@ -138,9 +138,10 @@ public class modulocalculadora {
         String repetir;
 
         do {
+            String opcion = "s";
             System.out.print("Ingresa un número inicial para comenzar la división: ");
             double division = teclado.nextDouble(); 
-            String opcion = "s";
+
 
             // Ciclo que divide muchos números
             while (opcion.equalsIgnoreCase("s")) {
@@ -258,6 +259,7 @@ public class modulocalculadora {
         Scanner teclado = new Scanner(System.in);
         int eleccioncalc;
         System.out.println("Bienvenid@ a calculo de áreas");
+        do{
        System.out.println(ANSI_CYAN +
                "                                              ╔═════════════════════════════════════════════════╗\n" +
                "                                              ║    BIENVENIDO A LA CALCULADORA DE DE ÁREAS:     ║\n" +
@@ -277,7 +279,7 @@ public class modulocalculadora {
                ANSI_RESET);
 
        System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
-        do{
+
         if (teclado.hasNextInt()) {
             eleccioncalc = teclado.nextInt();
             teclado.nextLine();
@@ -302,8 +304,7 @@ public class modulocalculadora {
                     rombo();
                     break;
                 case 7:
-                    nova.general();
-                    break;
+                    return;
                 default:
                     System.out.println("Selecciona una opción valida");
             }
