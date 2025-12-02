@@ -135,6 +135,7 @@ public class moduloejercicios
 
         System.out.println("Bienvenido a la seccion de ejercicios de aritmetica");
         System.out.println("Por cada ejercicio que resuelvas correctamente sumaras 5 NovaShots");
+        System.out.println("En caso de necesitar apoyo, escribe ▶ calculadora ◀ y podrás acceder a ella en cualquier ejercicio");
         System.out.println("Escribe 1 si estas listo o 2 para volver");
         do {
             if (sc.hasNextInt()){
