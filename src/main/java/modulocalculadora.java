@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class modulocalculadora {
@@ -11,10 +10,10 @@ public class modulocalculadora {
     public static final String ANSI_CYAN = "\u001B[36m";
     public static final String ANSI_WHITE = "\u001B[37m";
     public static void main(String[] args) {
-        gral();
+        gral(false);
     }
 
-    public static void gral() {
+    public static void gral(boolean volverajercicio) {
         //Variables
         Scanner teclado = new Scanner(System.in);
         int eleccion;
@@ -61,7 +60,13 @@ public class modulocalculadora {
                     reglaDeTres();
                     break;
                 case 4:
-                    nova.general();
+                    if (volverajercicio) {
+                        return;
+                    } else {
+                        nova.general();
+                    }
+
+                    break;
                 default:
                     System.out.println("Selecciona una opción valida");
             }
@@ -71,7 +76,7 @@ public class modulocalculadora {
 
     private static void aritmetica() {
         Scanner teclado2 = new Scanner(System.in);
-        int eleccionAri = 0;
+        int eleccionAri;
         do {
             System.out.println(ANSI_CYAN +
                     "                                             ╔═════════════════════════════════════════════════╗\n" +

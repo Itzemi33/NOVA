@@ -190,7 +190,7 @@ nova {
                         moduloejercicios.gral();
                         break;
                     case 2:
-                        modulocalculadora.gral();
+                        modulocalculadora.gral(false);
                         break;
                     case 3:
                         modulojuego.gral();
@@ -216,7 +216,7 @@ nova {
                 System.out.println("Error, ingresa un numero");
                 sc.nextLine();
             }
-        } while (opc > 4 || opc <=0);
+        } while (opc < 1 || opc > 4);
 
     }
 
