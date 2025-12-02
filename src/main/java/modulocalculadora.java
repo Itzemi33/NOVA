@@ -694,8 +694,6 @@ public class modulocalculadora {
             Scanner teclado = new Scanner(System.in);
             double A, B, C, D, multi;
 
-
-        System.out.println("Ingresa tu edad:");
             do {
                 System.out.print(ANSI_RESET + " A: " + ANSI_RESET);
                 A = teclado.nextDouble();
