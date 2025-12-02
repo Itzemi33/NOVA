@@ -6,6 +6,7 @@ public class moduloejercicios
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
+    static Scanner sc = new Scanner(System.in);
     static int puntos = 0; //Novashots
     static int ejercicioactualaritmetica = 0;
     static int ejercicioactualregladetres = 0;
@@ -75,7 +76,6 @@ public class moduloejercicios
     }
 
     private static void aritmetica() {
-        Scanner sc = new Scanner(System.in);
         int next; //Variable que lee si el usuario quiere continuar haciendo ejercicios o no
         int chose; //Variable que lee si el usuario quiere empezar con los ejercicios o volver
         String[] problemas = //Arreglo de ejercios
@@ -206,7 +206,6 @@ public class moduloejercicios
 
     private static void regladetres()
     {
-        Scanner sc = new Scanner(System.in);
         int next; //Variable que lee si el usuario quiere continuar haciendo ejercicios o no
         int chose; //Variable que lee si el usuario quiere empezar con los ejercicios o volver
         String []problemas=
@@ -362,7 +361,6 @@ public class moduloejercicios
 
     private static void calculoareas()
     {
-        Scanner sc = new Scanner(System.in);
         int next; //Variable que lee si el usuario quiere continuar haciendo ejercicios o no
         int chose; //Variable que lee si el usuario quiere empezar con los ejercicios o volver
         String []problemas =

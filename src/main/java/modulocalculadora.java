@@ -48,36 +48,41 @@ public class modulocalculadora {
 
             System.out.print(ANSI_RESET + " Seleccione una opción: " + ANSI_RESET);
 
-            eleccion = teclado.nextInt();
-            switch (eleccion) {
-                case 1:
-                    aritmetica();
-                    break;
-                case 2:
-                    calculoDeAreas();
-                    break;
-                case 3:
-                    reglaDeTres();
-                    break;
-                case 4:
-                    if (volverajercicio) {
-                        return;
-                    } else {
-                        nova.general();
-                    }
+            if (teclado.hasNextInt()) {
+                eleccion = teclado.nextInt();
+                switch (eleccion) {
+                    case 1:
+                        aritmetica();
+                        break;
+                    case 2:
+                        calculoDeAreas();
+                        break;
+                    case 3:
+                        reglaDeTres();
+                        break;
+                    case 4:
+                        if (volverajercicio) {
+                            return;
+                        } else {
+                            nova.general();
+                        }
 
-                    break;
-                default:
-                    System.out.println("Selecciona una opción valida");
+                        break;
+                    default:
+                        System.out.println("Selecciona una opción valida");
+                }
+            }else {
+                System.out.println("Selecciona una opción valida");
+                teclado.nextLine();
             }
-        } while (eleccion > 4 || eleccion <= 0);
+        } while (true);
 
     }
 
     private static void aritmetica() {
         Scanner teclado2 = new Scanner(System.in);
         int eleccionAri;
-        do {
+
             System.out.println(ANSI_CYAN +
                     "                                             ╔═════════════════════════════════════════════════╗\n" +
                     "                                             ║      BIENVENIDO A OPERACIONES ARITMÉTICAS       ║\n" +
@@ -87,31 +92,40 @@ public class modulocalculadora {
                     "                                             ║  1) Suma                                        ║\n" +
                     "                                             ║  2) Resta                                       ║\n" +
                     "                                             ║  3) Multipicación                               ║\n" +
-                    "                                             ║  4) División                                    ║"+
+                    "                                             ║  4) Division                                    ║\n" +
+                    "                                             ║  5) Volver                                      ║"+
                     ANSI_RESET);
             System.out.println(ANSI_YELLOW +
                     "                                             ╚═════════════════════════════════════════════════╝" +
                     ANSI_RESET);
 
             System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
-            eleccionAri = teclado2.nextInt();
-            switch (eleccionAri) {
-                case 1:
-                    suma();
-                    break;
-                case 2:
-                    resta();
-                    break;
-                case 3:
-                    multiplicacion();
-                    break;
-                case 4:
-                    division();
-                    break;
-                default:
-                    System.out.println("Selecciona una opción valida");
+        do {
+            if (teclado2.hasNextInt()) {
+                eleccionAri = teclado2.nextInt();
+                switch (eleccionAri) {
+                    case 1:
+                        suma();
+                        break;
+                    case 2:
+                        resta();
+                        break;
+                    case 3:
+                        multiplicacion();
+                        break;
+                    case 4:
+                        division();
+                        break;
+                    case 5:
+                        return;
+                    default:
+                        System.out.println("Selecciona una opción valida");
+                }
+            }else {
+                System.out.println("Selecciona una opcion valida");
+                teclado2.nextLine();
             }
-        } while (eleccionAri > 3 || eleccionAri <= 0);
+        } while (true);
 
     }
 
@@ -123,7 +137,7 @@ public class modulocalculadora {
         System.out.println("                    ⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
         System.out.println("");
         Scanner teclado = new Scanner(System.in);
-        String repetir = "s";
+        String repetir;
 
         do {
             System.out.print("Ingresa un número inicial para comenzar la división: ");
@@ -244,9 +258,8 @@ public class modulocalculadora {
     private static void calculoDeAreas() {
 
         Scanner teclado = new Scanner(System.in);
-        int eleccioncalc=0;
+        int eleccioncalc;
         System.out.println("Bienvenid@ a calculo de áreas");
-   do{
        System.out.println(ANSI_CYAN +
                "                                              ╔═════════════════════════════════════════════════╗\n" +
                "                                              ║    BIENVENIDO A LA CALCULADORA DE DE ÁREAS:     ║\n" +
@@ -258,39 +271,49 @@ public class modulocalculadora {
                "                                              ║  3) Cuadrado                                    ║\n" +
                "                                              ║  4) Circulo                                     ║\n"+
                "                                              ║  5) Trapecio                                    ║\n"+
-               "                                              ║  6) Rombo                                       ║" +
+               "                                              ║  6) Rombo                                       ║\n"+
+               "                                              ║  7) Volver                                      ║" +
                ANSI_RESET);
        System.out.println(ANSI_YELLOW +
                "                                              ╚═════════════════════════════════════════════════╝" +
                ANSI_RESET);
 
        System.out.print(ANSI_RESET + " Elija la operación que desea realizar " + ANSI_RESET);
+        do{
+        if (teclado.hasNextInt()) {
+            eleccioncalc = teclado.nextInt();
+            teclado.nextLine();
 
-        eleccioncalc= teclado.nextInt();
-
-        switch (eleccioncalc) {
-            case 1:
-                triangulo();
-                break;
-            case 2:
-                rectangulo();
-                break;
-            case 3:
-                cuadrado();
-                break;
-            case 4:
-                circulo();
-                break;
-            case 5:
-                trapecio();
-                break;
-            case 6:
-                rombo();
-                break;
-            default:
-                System.out.println("Selecciona una opción valida");
+            switch (eleccioncalc) {
+                case 1:
+                    triangulo();
+                    break;
+                case 2:
+                    rectangulo();
+                    break;
+                case 3:
+                    cuadrado();
+                    break;
+                case 4:
+                    circulo();
+                    break;
+                case 5:
+                    trapecio();
+                    break;
+                case 6:
+                    rombo();
+                    break;
+                case 7:
+                    nova.general();
+                    break;
+                default:
+                    System.out.println("Selecciona una opción valida");
+            }
+        }else {
+            System.out.println("Selecciona una opcion valida");
+            teclado.nextLine();
         }
-   } while (eleccioncalc>6 || eleccioncalc<=0);
+   } while (true);
 
     }
 

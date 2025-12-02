@@ -207,10 +207,10 @@ nova {
                             contador--;
                         }
                         System.out.println("Hasta aqui llego nuestra aventura, nos vemos pronto!");
+                        System.exit(0);
                         break;
                     default:
                         System.out.println("Opcion no valida");
-
                 }
             }else {
                 System.out.println("Error, ingresa un numero");
