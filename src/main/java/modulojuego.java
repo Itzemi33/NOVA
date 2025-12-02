@@ -77,7 +77,7 @@ public class modulojuego {
 
                         continue;
                     default:
-                        System.out.println("                                                Opcion no valida. Escribe 1 para jugar o 2 para salir                  ");
+                        System.out.println("                                            Opcion no valida. Escribe 1 para jugar, 2 para salir, 3 para color de nave                ");
                         break;
                 }
             }
