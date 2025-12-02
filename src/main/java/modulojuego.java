@@ -53,7 +53,7 @@ public class modulojuego {
             System.out.println("                    ∷                                             Gran trabajo!!                                                          ∷  ");
             System.out.println("                    ∷       Bienvenido NOVA    ⋙    Entra a la órbita de juego y disfruta    ⋙    Estas list@!                          ∷   ");
             System.out.println("                    ∷                                                                                                                     ∷  ");
-            System.out.println("                    ∷                        Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.     ∷  ");
+            System.out.println("                    ∷                        Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.                                                   ∷  ");
             System.out.println("                    ∷                  ¿Desea comenzar el juego? (1 = si, 2 = no, 3 = elegir color de tu nave):                           ∷  ");
             System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷  ");
             label:
@@ -69,15 +69,15 @@ public class modulojuego {
                     case "3":
                         elegirColor(entrada);
                         System.out.println("\n");
-                        System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
-                        System.out.println("                    ∷                                                                                                                               ∷");
-                        System.out.println("                    ∷                            Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.           ∷ ");
-                        System.out.println("                    ∷                       ¿Desea comenzar el juego? (1 = si, 2 = no, 3 = elegir color de tu nave):                                ∷ ");
-                        System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
+                        System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
+                        System.out.println("                    ∷                                                                                                             ∷");
+                        System.out.println("                    ∷                            Tienes " + balasDisponibles + " novashots y hay " + cantidadEnemigos + " naves enemigas.                                       ∷ ");
+                        System.out.println("                    ∷                       ¿Desea comenzar el juego? (1 = si, 2 = no, 3 = elegir color de tu nave):              ∷ ");
+                        System.out.println("                    ∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷∷");
 
                         continue;
                     default:
-                        System.out.println("                                                Opcion no valida. Escribe 1 para jugar o 2 para salir                  ");
+                        System.out.println("                                            Opcion no valida. Escribe 1 para jugar, 2 para salir, 3 para color de nave                ");
                         break;
                 }
             }
@@ -226,41 +226,51 @@ public class modulojuego {
                         System.out.println("                                                                       Comando inválido.");
                         break;
                 }
-                for (int y = 0; y < MAX_BALAS; y++)
-                {
-                    if (!balaActiva[y]) continue;
-                    int nuevaFila = balas[y][0] - 1;
-                    int columna = balas[y][1];
+                    for (int y = 0; y < MAX_BALAS; y++) {
+                        if (balaActiva[y]) {
+
+                            int fila = balas[y][0];
+                            int columna = balas[y][1];
+
+                            int nuevaFila = fila - 1;
+                            if (nuevaFila < 0) {
+                                balaActiva[y] = false;
+                                balas[y][0] = -1;
+                                balas[y][1] = -1;
+                                continue;
+                            }
+
+                            boolean elimino = false;
+
+                            for (int j = 0; j < MAX_ENEMIGOS; j++) {
+                                if (enemigoActivo[j]) {
+                                    int fe = enemigos[j][0];
+                                    int ce = enemigos[j][1];
 
 
-                    boolean ledio = false;
+                                    if ((fe == nuevaFila && ce == columna) ||
+                                            (fe == fila && ce == columna)) {
 
-                    for (int j = 0; j < MAX_ENEMIGOS; j++)
-                    {
-                        if (enemigoActivo[j] && enemigos[j][0] == nuevaFila && enemigos[j][1] == columna)
-                        {
-                            //!
-                            enemigoActivo[j] = false;
-                            balaActiva[y] = false;
-                            balas[y][0] = -1;
-                            balas[y][1] = -1;
+                                        enemigoActivo[j] = false;
+                                        enemigos[j][0] = -1;
+                                        enemigos[j][1] = -1;
 
-                            ledio = true;
-                            System.out.println("¡Muy bien! Eliminaste a un enemigo, continua así ");
-                            break;
+                                        balaActiva[y] = false;
+                                        balas[y][0] = -1;
+                                        balas[y][1] = -1;
+
+                                        elimino = true;
+                                        System.out.println("¡Muy bien! Eliminaste a un enemigo, continua así ");
+                                        break;
+                                    }
+                                }
+                            }
+
+                            if (!elimino) {
+                                balas[y][0] = nuevaFila;
+                            }
                         }
                     }
-                    if (!ledio) {
-                        if (nuevaFila >= 0) {
-                            balas[y][0] = nuevaFila;
-                        } else {
-
-                            balaActiva[y] = false;
-                            balas[y][0] = -1;
-                            balas[y][1] = -1;
-                        }
-                    }
-                }
 
                 for (int i = 0; i < MAX_ENEMIGOS; i++) {
                     if (enemigoActivo[i])
@@ -364,9 +374,12 @@ public class modulojuego {
             }
         }
     }
-    static void imprimirTableroConColor(char[][] tablero, int naveX, int naveY) {
-        for (int fila = 0; fila < tablero.length; fila++) {
-            System.out.print(":");
+    static void imprimirTableroConColor(char[][] tablero, int naveX, int naveY)
+    {
+        String centrado = "                                                           ";
+        for (int fila = 0; fila < tablero.length; fila++)
+        {
+            System.out.print(centrado +":");
             for (int col = 0; col < tablero[fila].length; col++) {
                 char ch = tablero[fila][col];
                 if (fila == naveY && col == naveX && ch == NAVE) {
@@ -378,24 +391,9 @@ public class modulojuego {
             }
             System.out.println(":");
         }
-        System.out.print(" ");
+        System.out.print(centrado + " ");
         for (int c = 0; c < tablero[0].length; c++) {
-            System.out.print((c % 10));
-        }
-        System.out.println();
-    }
-
-    static void imprimirTablero(char[][] tablero) {
-        for (int fila = 0; fila < tablero.length; fila++) {
-            System.out.print("|");
-            for (int col = 0; col < tablero[fila].length; col++) {
-                System.out.print(tablero[fila][col]);
-            }
-            System.out.println("|");
-        }
-        System.out.print(" ");
-        for (int c = 0; c < tablero[0].length; c++) {
-            System.out.print((c % 10));
+            System.out.print((c % 10) );
         }
         System.out.println();
     }
