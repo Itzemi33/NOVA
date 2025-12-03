@@ -146,11 +146,6 @@ nova {
 
 
     }
-
-    private static String getLineBreak() {
-        return "\n";
-    }
-
     public static void general() {
         Scanner sc = new Scanner(System.in);
         int opc = 0;
@@ -187,7 +182,7 @@ nova {
                 opc = sc.nextInt();
                 switch (opc) {
                     case 1:
-                        moduloejercicios.gral();
+                        modulojuego.ejercicios();
                         break;
                     case 2:
                         modulocalculadora.gral(false);
@@ -202,7 +197,7 @@ nova {
                             try {
                                 Thread.sleep(500);
                             } catch (InterruptedException e) {
-                                e.printStackTrace();
+                                Thread.currentThread().interrupt();
                             }
                             contador--;
                         }
