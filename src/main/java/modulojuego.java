@@ -1,5 +1,6 @@
 import java.util.*;
 public class modulojuego {
+    //modulo juego
     static final int ANCHO = 19;
     static final int ALTO = 20;
     static final char VACIO = ' ';
@@ -19,12 +20,15 @@ public class modulojuego {
     static int[][] balas = new int[MAX_BALAS][2];
     static boolean[] balaActiva = new boolean[MAX_BALAS];
 
+    //(Modulo juego y ejercicios)
+    public static int puntos = 0; //Novashots
+
     //modulo ejercicios
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_PURPLE = "\u001B[35m";
     public static final String ANSI_CYAN = "\u001B[36m";
     static Scanner sc = new Scanner(System.in);
-    static int puntos = 0; //Novashots
+
     static int ejercicioactualaritmetica = 0;
     static int ejercicioactualregladetres = 0;
     static int ejercicioactualcalcareas = 0;

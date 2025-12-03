@@ -9,12 +9,12 @@ nova {
     static String usuario;
     static String password;
     static int edad =-1;
+    static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         registro();
         general();
     }
     private static void registro() {
-        Scanner sc = new Scanner(System.in);
         System.out.println(ANSI_BLUE+"                                                                                                                                     \n" +
                 "                                                                                                                                     \n" +
                 "           NNNNNNNN        NNNNNNNN               OOOOOOOOO               VVVVVVVV           VVVVVVVV                         AAA               \n" +
@@ -147,8 +147,7 @@ nova {
 
     }
     public static void general() {
-        Scanner sc = new Scanner(System.in);
-        int opc = 0;
+        int opc;
 
             System.out.println(ANSI_BLUE+
                     "                                                        ███    ██  ██████  ██    ██  █████  \n" +
@@ -163,6 +162,7 @@ nova {
                     "                   ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║    ██╔═══╝ ██╔══██╗██║██║╚██╗██║██║     ██║██╔═══╝ ██╔══██║██║     \n" +
                     "                   ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝    ██║     ██║  ██║██║██║ ╚████║╚██████╗██║██║     ██║  ██║███████╗\n" +
                     "                   ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝╚═╝╚═╝     ╚═╝  ╚═╝╚══════╝\n" +ANSI_RESET);
+        do {
             System.out.println(ANSI_CYAN +
                     "                                             ╔═════════════════════════════════════════════════╗\n" +
                     "                                             ║         SELECCIONA LA OPCIÓN QUE DESEES         ║\n" +
@@ -177,9 +177,9 @@ nova {
             System.out.println(ANSI_BLUE +
                     "                                             ╚═════════════════════════════════════════════════╝" +
                     ANSI_RESET);
-        do {
             if (sc.hasNextInt()) {
                 opc = sc.nextInt();
+                sc.nextLine();
                 switch (opc) {
                     case 1:
                         modulojuego.ejercicios();
@@ -188,7 +188,12 @@ nova {
                         modulocalculadora.gral(false);
                         break;
                     case 3:
-                        modulojuego.gral();
+                        if(modulojuego.puntos == 0){
+                            System.out.println("No puedes jugar si no tienes Novashots");
+                            System.out.println("Consigue Novashots resolviendo ejercicios!");
+                        } else {
+                            modulojuego.gral();
+                        }
                         break;
                     case 4:
                         int contador = 3;
@@ -211,7 +216,7 @@ nova {
                 System.out.println("Error, ingresa un numero");
                 sc.nextLine();
             }
-        } while (opc < 1 || opc > 4);
+        } while (true);
 
     }
 
