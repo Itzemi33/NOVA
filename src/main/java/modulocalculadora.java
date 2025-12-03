@@ -133,7 +133,7 @@ public class modulocalculadora {
                            "                                                     Bienvenid@ a la sección NOVA división                        \n"+
                            "                                           En esta sección podras dividir números enteros y decimales                 ");
         System.out.println("                    ⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝⨝");
-        System.out.println("");
+        System.out.println(" ");
         Scanner teclado = new Scanner(System.in);
         String repetir;
 
@@ -162,14 +162,27 @@ public class modulocalculadora {
                 } else {
                     System.out.println("No se puede dividir por cero. Intenta nuevamente.");
                 }
-                System.out.print("¿Quieres dividir otro número? (s/n): ");
-                opcion = teclado.next();
+                do {
+                    System.out.print("¿Quieres dividir otro número? (s/n): ");
+                    opcion = teclado.next();
+
+                    if (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n")) {
+                        System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                    }
+
+                } while (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n"));
             }
             System.out.println("El resultado de la división es: " + division);
 
-            System.out.print("¿Quieres repetir la sección de división? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir la sección de división? (s/n): ");
+                repetir = teclado.next();
 
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
         } while (repetir.equalsIgnoreCase("s"));
     }
 
@@ -203,13 +216,27 @@ public class modulocalculadora {
                 }
                 double num = teclado.nextDouble();
                 multiplicacion = multiplicacion * num;
-                System.out.print("¿Quieres multiplicar otro número? (s/n): ");
-                opcion = teclado.next();
+                do {
+                    System.out.print("¿Quieres multiplicar otro número? (s/n): ");
+                    opcion = teclado.next();
+
+                    if (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n")) {
+                        System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                    }
+
+                } while (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n"));
             }
             System.out.println("El resultado de la multiplicación es: " + multiplicacion);
 
-            System.out.print("¿Quieres repetir la sección de multiplicación? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir la sección de multiplicación? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
     }
@@ -244,13 +271,27 @@ public class modulocalculadora {
                         }
                         double num = teclado.nextDouble();
                         resta = resta - num;
-                        System.out.print("¿Quieres restar otro número? (s/n): ");
-                        opcion = teclado.next();
+                        do {
+                            System.out.print("¿Quieres restar otro número? (s/n): ");
+                            opcion = teclado.next();
+
+                            if (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n")) {
+                                System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                            }
+
+                        } while (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n"));
                     }
                     System.out.println("El resultado de la resta es: " + resta);
 
-                    System.out.print("¿Quieres repetir la sección de resta? (s/n): ");
-                    repetir = teclado.next();
+                    do {
+                        System.out.print("¿Quieres repetir la sección de resta? (s/n): ");
+                        repetir = teclado.next();
+
+                        if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                            System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                        }
+
+                    } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
                 } while (repetir.equalsIgnoreCase("s"));
     }
     private static void suma() {
@@ -278,13 +319,27 @@ public class modulocalculadora {
                 }
                 double num = teclado.nextDouble();
                 suma = suma + num;
-                System.out.print("¿Quieres agregar otro número? (s/n): ");
-                opcion = teclado.next();
+                do {
+                    System.out.print("¿Quieres agregar otro número? (s/n): ");
+                    opcion = teclado.next();
+
+                    if (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n")) {
+                        System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                    }
+
+                } while (!opcion.equalsIgnoreCase("s") && !opcion.equalsIgnoreCase("n"));
             }
             System.out.println("El resultado es: " + suma);
 
-            System.out.print("¿Quieres repetir la sección de suma? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir la sección de suma? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
 
@@ -375,7 +430,7 @@ public class modulocalculadora {
         System.out.println(ANSI_CYAN+
                 "                                                                           A = π·r²                                                     "+ANSI_RESET);
 
-        String repetir = "s";
+        String repetir;
         do {
             Scanner teclado = new Scanner(System.in);
             double radio, area, radioCua;
@@ -397,8 +452,15 @@ public class modulocalculadora {
             System.out.println(ANSI_PURPLE+"Area de circulo ="+area+ANSI_RESET);
 
 
-            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
 
@@ -448,8 +510,15 @@ public class modulocalculadora {
             System.out.println(ANSI_PURPLE+"Area del cuadrado ="+area+ANSI_RESET);
 
 
-            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
     }
@@ -512,8 +581,15 @@ public class modulocalculadora {
             System.out.println(ANSI_PURPLE+"Area del rombo ="+area+ANSI_RESET);
 
 
-            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
     }
@@ -541,7 +617,7 @@ public class modulocalculadora {
         System.out.println(ANSI_CYAN+
                 "                                                                   A = [(B + b)/2]·h                                                     "+ANSI_RESET);
 
-        String repetir = "s";
+        String repetir;
         do {
             Scanner teclado = new Scanner(System.in);
             double bMayor,bMenor,alt,suma, div, area;
@@ -589,8 +665,15 @@ public class modulocalculadora {
             area= div * alt;
             System.out.println(ANSI_PURPLE+"Area del trapecio ="+area+ANSI_RESET);
 
-            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
     }
@@ -618,7 +701,7 @@ public class modulocalculadora {
         System.out.println(ANSI_CYAN+
                 "                                                                       A = b·h                                                     "+ANSI_RESET);
 
-        String repetir = "s";
+        String repetir;
         do {
             Scanner teclado = new Scanner(System.in);
             double base, alt, area;
@@ -654,8 +737,15 @@ public class modulocalculadora {
             System.out.println(ANSI_PURPLE+"Area del rectángulo ="+area+ANSI_RESET);
 
 
-            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
     }
@@ -683,7 +773,7 @@ public class modulocalculadora {
         System.out.println(ANSI_CYAN+
                 "                                                                    A = (b·h)/2                                                     "+ANSI_RESET);
 
-        String repetir = "s";
+        String repetir;
         do {
             Scanner teclado = new Scanner(System.in);
             double base, alt,multi, area;
@@ -718,8 +808,15 @@ public class modulocalculadora {
             System.out.println(ANSI_PURPLE+"Area del triangulo ="+area+ANSI_RESET);
 
 
-            System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir el calculo del área? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
     }
@@ -745,11 +842,17 @@ public class modulocalculadora {
                            "                                                                             B       D                                               "+"\n"+ANSI_RESET);
 
         Scanner teclado=new Scanner(System.in);
-        String repetir = "s";
+        String repetir;
         do {
             String eleccion;
             do {
-                System.out.println("¿Cuál es la posición de su incognita \n" + "A\n" + "B\n" + "C\n" + "D\n");
+                System.out.println("""
+                        ¿Cuál es la posición de su incognita\s
+                        A
+                        B
+                        C
+                        D
+                        """);
                 eleccion = teclado.next().toUpperCase();
 
                 if (!eleccion.equals("A") && !eleccion.equals("B") && !eleccion.equals("C") && !eleccion.equals("D")) {
@@ -771,8 +874,15 @@ public class modulocalculadora {
                     D();
                     break;
             }
-            System.out.print("¿Quieres repetir regla de tres? (s/n): ");
-            repetir = teclado.next();
+            do {
+                System.out.print("¿Quieres repetir el regla de tres? (s/n): ");
+                repetir = teclado.next();
+
+                if (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n")) {
+                    System.out.println("Opción inválida. Solo escribe 's' o 'n'.");
+                }
+
+            } while (!repetir.equalsIgnoreCase("s") && !repetir.equalsIgnoreCase("n"));
 
         } while (repetir.equalsIgnoreCase("s"));
 
