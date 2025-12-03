@@ -383,7 +383,7 @@ public class modulocalculadora {
             do {
                 System.out.print(ANSI_RESET + " Radio: " + ANSI_RESET);
                 while (!teclado.hasNextDouble()) {
-                    System.out.println("Error: debes ingresar un número válido.");
+                    System.out.println("Error debes ingresar un número válido.");
                     teclado.next(); // descarta lo incorrecto
                     System.out.print("Intenta de nuevo: ");
                 }
